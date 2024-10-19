@@ -18,6 +18,7 @@ export default function SectionA() {
         <Container className="">
             <div className="flex justify-between items-center uppercase">
                 <Image src={"/images/logo.png"} width={186} height={58} alt="Logo" />
+                
                 <div className="hidden lg:flex items-center gap-x-5">
                     {
                         ["Home", "About us"].map((i) => <LinkItem href="" title={i} />)
