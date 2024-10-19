@@ -16,6 +16,7 @@ const config: Config = {
   			alt: '#D2F7FB',
   			tint: '#0C3040',
   			'tint-alt': '#2FC5E1',
+			'tint-b':"#187593",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

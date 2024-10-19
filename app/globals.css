@@ -12,6 +12,10 @@ body {
   font-family: 'Krona One', sans-serif;
 }
 
+.wa-ff{
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
