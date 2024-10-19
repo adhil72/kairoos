@@ -24,7 +24,7 @@ function VLine() {
 
 export default function SectionB() {
     return <section className="w-full min-h-screen flex flex-col">
-        <Container className="flex items-center flex-1">
+        <Container className="flex items-center !flex-row flex-1">
             <div className="flex-1 flex flex-col justify-center">
                 <div className="flex w-full">
                     <div className="flex flex-1 relative justify-center -mt-[25px]">
@@ -44,7 +44,7 @@ export default function SectionB() {
                 <Sb />
             </div>
         </Container>
-        <Container className="w-full flex items-center">
+        <Container className="w-full flex !flex-row items-center -mt-40">
             <IconButton Icon={Whatsapp} title="Whatsapp" url="/aviation" />
             <VLine />
             <IconButton Icon={Phone} title="Whatsapp" url="/aviation" />
