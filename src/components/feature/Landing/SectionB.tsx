@@ -48,7 +48,7 @@ export default function SectionB() {
                 </p>
             </div>
 
-            <div className="flex-1 flex justify-end  hidden lg:block">
+            <div className="flex-1 justify-end  hidden lg:flex">
                 <img
                     src="/images/landing/im_e.png"
                     className="w-[406px]"
@@ -64,7 +64,7 @@ export default function SectionB() {
             <IconButton Icon={Cloud} title="Whatsapp" url="/aviation" />
             <div className="h-1 flex-1 bg-tint-alt hidden lg:block">
             </div>
-            <Node className="hidden lg:block"/>
+            <Node className="hidden lg:block" />
         </Container>
     </section>
 }
