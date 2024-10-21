@@ -4,6 +4,7 @@ import SectionC from "./SectionC";
 import SectionD from "./SectionD";
 import SectionE from "./SectionE";
 import SectionF from "./SectionF";
+import SectionG from "./SectionG";
 
 export default function Landing() {
     return <div>
@@ -13,5 +14,6 @@ export default function Landing() {
         <SectionD />
         <SectionE />
         <SectionF />
+        <SectionG />
     </div>
 }
