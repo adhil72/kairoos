@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontWeight:{
+			sml: '500'
+		},
+		fontFamily:{
+			disc: 'Wix Madefor Display',
+			head: 'Krona One',
+
+		},
   		backgroundColor: {
   			tint: '#0C3040',
   			'tint-alt': '#2FC5E1'
