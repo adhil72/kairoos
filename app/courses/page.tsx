@@ -1,3 +1,5 @@
+"use client";
+
 import HeroB from '@/assets/HeroB';
 import Container from '@/components/common/Container';
 import CoursesSection from '@/components/common/CoursesSection';
