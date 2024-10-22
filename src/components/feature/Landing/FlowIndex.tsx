@@ -1,62 +1,32 @@
-'use client'
+'use client';
 
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 
 export default function FlowChart() {
-    const [numSteps, setNumSteps] = useState(4)
-    const [currentStep, setCurrentStep] = useState(1)
+    const [focusedStep, setFocusedStep] = useState(2)
+    const steps = [1, 2, 3, 4]
 
-    const handleNumStepsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = parseInt(e.target.value)
-        setNumSteps(value > 0 ? value : 1)
-        setCurrentStep(1)
-    }
-
-    const handlePrevStep = () => {
-        setCurrentStep(prev => Math.max(prev - 1, 1))
-    }
-
-    const handleNextStep = () => {
-        setCurrentStep(prev => Math.min(prev + 1, numSteps))
-    }
-
-    return <div>
-        <svg width={numSteps * 60 + 1} height="53" viewBox={`0 0 ${numSteps * 60 + 1} 53`} fill="none" xmlns="http://www.w3.org/2000/svg">
-            {Array.from({ length: numSteps - 1 }, (_, i) => (
-                <line
-                    key={`line-${i}`}
-                    x1={i * 60 + 17}
-                    y1="26.5"
-                    x2={(i + 1) * 60 + 1}
-                    y2="26.5"
-                    stroke="#8CC9D7"
-                    strokeWidth="1.36723"
-                />
+    return (
+        <div className="flex items-center justify-center w-full max-w-md mx-auto mt-10">
+            {steps.map((step, index) => (
+                <>
+                    <div key={step} className="flex items-center">
+                        <button
+                            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 ${step === focusedStep
+                                ? 'bg-cyan-400 text-white scale-125'
+                                : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                                }`}
+                            onClick={() => setFocusedStep(step)}
+                        >
+                            {step}
+                        </button>
+                        {index < steps.length - 1 && (
+                            <div className="w-[20px] h-1 bg-cyan-400 mx-2" />
+                        )}
+                    </div>
+                    {/* {index<steps.length-1 && (<div className='flex-1 h-1 bg-cyan-400'></div>)} */}
+                </>
             ))}
-
-            {Array.from({ length: numSteps }, (_, i) => (
-                <g key={`step-${i}`}>
-                    <circle
-                        cx={i * 60 + 9}
-                        cy="26.5"
-                        r="20"
-                        fill={currentStep === i + 1 ? "#2FC5E1" : "#D2F7FB"}
-                    />
-                    <text
-                        x={i * 60 + 9}
-                        y="30"
-                        textAnchor="middle"
-                        fill={currentStep === i + 1 ? "white" : "black"}
-                        fontSize="10"
-                        fontFamily="Arial, sans-serif"
-                    >
-                        {i + 1}
-                    </text>
-                </g>
-            ))}
-        </svg>
-    </div>
+        </div>
+    )
 }

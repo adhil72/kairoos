@@ -9,10 +9,10 @@ import Node from "@/assets/Node";
 export default function SectionF() {
     return <section className="w-full">
         <Container className="items-center">
-            <span className="text-[#187593] text-[22px] leading-[57px] font-[400]">Why Kairos Institute?</span>
-            <span className="text-[#187593] text-[43px] leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
-            <div className="flex">
-                <div className="w-[80%] h-[409px]">
+            <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[57px] font-[400]">Why Kairos Institute?</span>
+            <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
+            <div className="flex flex-col lg:flex-row">
+                <div className="w-full md:w-[80%] md:h-[409px]">
                     <Image
                         src={'/images/landing/im_g.png'}
                         alt="im_g"
@@ -26,11 +26,12 @@ export default function SectionF() {
                     </p>
                 </div>
             </div>
-            <div className=" grid grid-cols-3 h-[177px] w-full my-10">
-                <B1 className="flex-1" />
-                <B2 className="flex-1" />
-                <B3 className="flex-1" />
+            <div className="flex w-full overflow-x-auto my-10 justify-center gap-x-10">
+                <B1 className="w-[327.5px] min-w-[327.5px] h-[177px]" />
+                <B2 className="w-[327.5px] min-w-[327.5px] h-[177px]" />
+                <B3 className="w-[327.5px] min-w-[327.5px] h-[177px]" />
             </div>
+
             <div className="flex w-full">
                 <div className="flex-1 flex items-center">
                     <Node />

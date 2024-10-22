@@ -8,40 +8,11 @@ import Image from "next/image";
 import Link from "next/link";
 import FlowChart from "./FlowIndex";
 
-function LinkItem({ href, title }: { title: string, href: string }) {
-    return <Link href={href} className="text-sm text-tint hover:text-tint-alt">
-        {title}
-    </Link>
-}
+
 
 export default function SectionA() {
-    return <section className="w-full py-4">
+    return <section className="w-full">
         <Container className="">
-            <div className="flex justify-between items-center uppercase">
-                <Image src={"/images/logo.png"} width={186} height={58} alt="Logo" />
-                
-                <div className="hidden lg:flex items-center gap-x-5">
-                    {
-                        ["Home", "About us"].map((i) => <LinkItem href="" title={i} />)
-                    }
-                    <DropdownMenu>
-                        <DropdownMenuTrigger>
-                            <span className="text-sm text-tint hover:text-tint-alt uppercase">
-                                Courses ▼
-                            </span>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent>
-                            <DropdownMenuItem>Profile</DropdownMenuItem>
-                            <DropdownMenuItem>Billing</DropdownMenuItem>
-                            <DropdownMenuItem>Team</DropdownMenuItem>
-                            <DropdownMenuItem>Subscription</DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-                    {
-                        ["Placements", "Gallary", "CONTACT US", "BLOG"].map((i) => <LinkItem href="" title={i} />)
-                    }
-                </div>
-            </div>
             <div className="relative w-full">
                 <div className="relative z-10">
                     <div className="px-4 md:px-[70px] md:py-[32px] flex flex-col-reverse md:flex-row items-center justify-center">

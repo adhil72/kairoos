@@ -5,9 +5,9 @@ import { LucideChevronLeft, LucideChevronRight } from "lucide-react";
 export default function SectionH() {
     return <section className="w-full min-h-[60vh]">
         <Container className="items-center">
-            <span className="font-[400] text-[22px] leading-[57px] text-[#187593]">Testimonials</span>
-            <span className="font-[400] text-[43px] leading-[57px] text-[#187593]">About our Institution</span>
-            <div className="flex">
+            <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593]">Testimonials</span>
+            <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593]">About our Institution</span>
+            <div className="flex mt-10 lg:mt-0">
                 <div className="flex-1 flex justify-end">
                     <img className="w-[282.94px] object-right h-[266.82px] object-contain" src="/images/landing/im_i.png" alt="" />
                 </div>
