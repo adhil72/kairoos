@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import TopBadge from "@/components/feature/TopBadge/TopBadge";
+import Footer from "@/components/common/Footer";
 
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
         <div className="flex-1">
           {children}
         </div>
+        <Footer/>
       </body>
     </html>
   );
