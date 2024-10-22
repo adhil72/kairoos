@@ -7,6 +7,7 @@ import Link from "next/link";
 import Container from "@/components/common/Container";
 import Menu from "@/assets/Menu";
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
+import LeftBadge from "@/components/feature/LeftBadge/LeftBadge";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,8 @@ function LinkItem({ href, title }: { title: string, href: string }) {
     {title}
   </Link>
 }
+
+
 
 function AppBar() {
   return (
@@ -83,6 +86,7 @@ export default function RootLayout({
       <body className={`w-full h-screen bg-white flex flex-col`}>
         <TopBadge />
         <AppBar />
+        <LeftBadge />
         <div className="flex-1">
           {children}
         </div>
