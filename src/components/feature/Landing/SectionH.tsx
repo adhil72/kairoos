@@ -7,8 +7,8 @@ export default function SectionH() {
         <Container className="items-center">
             <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593]">Testimonials</span>
             <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593]">About our Institution</span>
-            <div className="flex mt-10 lg:mt-0">
-                <div className="flex-1 flex justify-end">
+            <div className="flex flex-col lg:flex-row mt-10 lg:mt-0 gap-y-10 lg:gap-y-0">
+                <div className="flex-1 flex lg:justify-end">
                     <img className="w-[282.94px] object-right h-[266.82px] object-contain" src="/images/landing/im_i.png" alt="" />
                 </div>
                 <div className="flex-1 px-5">
