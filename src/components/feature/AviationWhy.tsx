@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Container from "../common/Container";
 const WhyAviationSection: React.FC = () => {
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-4 relative text-center md:text-left flex flex-col md:flex-row items-center md:items-start mb-5">
+      <Container className="max-w-7xl mx-auto px-4 relative text-center md:text-left flex flex-col md:flex-row items-center md:items-start mb-5">
         <div className="mb-10 md:mb-0 relative">
           <Image
             src={"/images/arrowL.png"}
@@ -63,7 +64,7 @@ const WhyAviationSection: React.FC = () => {
             height={77}
             className="absolute lg:hidden -bottom-8 right-40"
           />
-      </div>
+      </Container>
 
       <div className="mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 shadow-lg rounded-lg max-w-4xl mx-auto">
         <h3 className="text-3xl font-bold text-center mb-8">Enquiry Form</h3>

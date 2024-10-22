@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Container from '../common/Container';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -24,7 +25,7 @@ const FAQ = () => {
 
   return (
     <section className="py-12 bg-[#F8F8F8]">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <Container className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6">FAQ</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -41,7 +42,7 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

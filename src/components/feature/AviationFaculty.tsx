@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '../common/Container';
 
 const AviationFaculty = () => {
   const facultyMembers = [
@@ -11,7 +12,7 @@ const AviationFaculty = () => {
 
   return (
     <section className="py-12">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <Container className="max-w-6xl mx-auto px-6 text-center">
         <div className='relative'>
         <h2 className="relative text-3xl md:text-4xl font-bold text-[#187593] mb-6">
           <span className='text-[22px] font-[400]'>Team of Experienced</span>
@@ -45,7 +46,7 @@ const AviationFaculty = () => {
         <button className="bg-tint-alt text-white py-2 px-6 rounded-full hover:bg-[#135e6e]">
           View More
         </button>
-      </div>
+      </Container>
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from './Container';
 
 const Placements = () => {
   const placementMembers = [
@@ -10,7 +11,7 @@ const Placements = () => {
 
   return (
     <section className="py-12 bg-[#E0F7F8] relative">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <Container className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6 relative">
           Placements
           <img 
@@ -60,7 +61,7 @@ const Placements = () => {
                 alt="ring" 
                 className="absolute w-[22px] h-[22px] right-60 bottom-32" 
           /> 
-      </div>
+      </Container>
     </section>
   );
 };
