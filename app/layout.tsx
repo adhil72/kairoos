@@ -8,6 +8,8 @@ import Container from "@/components/common/Container";
 import Menu from "@/assets/Menu";
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import LeftBadge from "@/components/feature/LeftBadge/LeftBadge";
+import Footer from "@/components/common/Footer";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -90,6 +92,7 @@ export default function RootLayout({
         <div className="flex-1">
           {children}
         </div>
+        <Footer/>
       </body>
     </html>
   );
