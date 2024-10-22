@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontWeight: {
+				sml: '500'
+			},
 			backgroundColor: {
 				tint: '#0C3040',
 				'tint-alt': '#2FC5E1'
