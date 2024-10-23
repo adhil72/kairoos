@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+
 const WhyAviationSection: React.FC = () => {
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-4 relative text-center md:text-left flex flex-col md:flex-row items-center md:items-start mb-5">
-        <div className="mb-10 md:mb-0 relative">
+      <div className="max-w-7xl mx-auto px-4 relative text-center md:text-left flex flex-col md:flex-row items-center md:items-start mb-5 gap-10">
+        <div className="md:w-1/2 mb-10 md:mb-0 relative">
           <Image
             src={"/images/arrowL.png"}
             alt="rightarrow"
@@ -15,7 +16,7 @@ const WhyAviationSection: React.FC = () => {
           <h2 className="text-4xl font-bold text-[#187593] mb-6">
             Why Aviation Course?
           </h2>
-          <div className="md:w-1/2 flex justify-center relative">
+          <div className="w-full flex justify-center relative">
             <div className="relative py-2 md:hidden w-[362.21px] h-[526px]">
               <Image
                 src={"/images/Qplane.png"}
@@ -45,8 +46,8 @@ const WhyAviationSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="md:w-1/2 flex justify-center relative">
-          <div className="hidden md:relative w-[362.21px] h-[526px]">
+        <div className="md:w-1/2 flex justify-center">
+          <div className="hidden md:block relative w-[362.21px] h-[526px]">
             <Image
               src={"/images/Qplane.png"}
               width={362}
@@ -56,13 +57,21 @@ const WhyAviationSection: React.FC = () => {
             />
           </div>
         </div>
+
         <Image
-            src={"/images/arrowL.png"}
-            alt="rightarrow"
-            width={75.84}
-            height={77}
-            className="absolute lg:hidden -bottom-8 right-40"
-          />
+          src={"/images/arrowL.png"}
+          alt="rightarrow"
+          width={75.84}
+          height={77}
+          className="absolute lg:hidden -bottom-8 right-40"
+        />
+         <Image
+          src={"/images/arrowL.png"}
+          alt="rightarrow"
+          width={75.84}
+          height={77}
+          className="absolute hidden lg:block -left-[70px] bottom-16"
+        />
       </div>
 
       <div className="mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 shadow-lg rounded-lg max-w-4xl mx-auto">
