@@ -10,7 +10,7 @@ import Link from "next/link";
 import ArrowBLeft from "./assets/ArrowBLeft";
 
 export default function SectionG() {
-    return <section className="w-full min-h-[50vh] -mt-[150px]">
+    return <section className="w-full min-h-[50vh]">
         <Container className="lg:flex-row mb-0 items-center">
             <div>
                 <img src="/images/landing/im_h.png" alt="im_h" className="w-[80%] md:w-[318px] md:h-[517px] object-contain" />

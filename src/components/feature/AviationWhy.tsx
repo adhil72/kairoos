@@ -5,7 +5,7 @@ const WhyAviationSection: React.FC = () => {
   return (
     <section className="py-16">
       <Container className="max-w-7xl mx-auto px-4 relative text-center md:text-left flex flex-col md:flex-row items-center md:items-start mb-5">
-        <div className="mb-10 md:mb-0 relative">
+        <div className="w-[70%] mb-10 md:mb-0">
           <Image
             src={"/images/arrowL.png"}
             alt="rightarrow"
@@ -47,23 +47,9 @@ const WhyAviationSection: React.FC = () => {
         </div>
 
         <div className="md:w-1/2 flex justify-center relative">
-          <div className="hidden md:relative w-[362.21px] h-[526px]">
-            <Image
-              src={"/images/Qplane.png"}
-              width={362}
-              height={526}
-              alt="Aviation"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
+          <img src="/images/Qplane.png" className="w-[362px] h-[526px] object-cover" />
         </div>
-        <Image
-            src={"/images/arrowL.png"}
-            alt="rightarrow"
-            width={75.84}
-            height={77}
-            className="absolute lg:hidden -bottom-8 right-40"
-          />
+       
       </Container>
 
       <div className="mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 shadow-lg rounded-lg max-w-4xl mx-auto">

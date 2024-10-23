@@ -1,5 +1,6 @@
 "use client";
 
+import SectionG from '../Landing/SectionG';
 import A from './A';
 import B from './B';
 import C from './C';
@@ -17,6 +18,7 @@ export default function Avitation() {
         <div className="bg-white min-h-screen">
             <A />
             <B />
+            <SectionG />
             <C />
             <D />
             <E />
