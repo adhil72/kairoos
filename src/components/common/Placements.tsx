@@ -9,7 +9,7 @@ const Placements = () => {
     { name: 'ARJUN V.R', role: 'Driver Logistics', image: '/placements/d.png' },
   ];
 
-  return <section className="w-full bg-[#E0F7F8] relative">
+  return <section id='placements' className="w-full bg-[#E0F7F8] relative">
     <Container className="max-w-6xl mx-auto px-6 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6 relative">
         Placements

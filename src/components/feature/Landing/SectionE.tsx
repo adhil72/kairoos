@@ -8,7 +8,7 @@ import ArrowT from "./assets/ArrowT";
 import { useState } from "react";
 
 function HeadItem({ Icon, title, solid, onClick }: { Icon: any, title: string, solid?: boolean, onClick?: () => void }) {
-    return <div onClick={onClick} className={`flex px-20 py-3 items-center gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
+    return <div onClick={onClick} className={`flex cursor-pointer px-20 py-3 items-center gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
         <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
         <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[16px] leading-[18px] font-[400] min-w-[200px] text-center`}>{title}</span>
     </div>
@@ -38,7 +38,7 @@ export default function SectionE() {
     return <section className="w-full bg-[#EDFDFE]">
         <div className="w-full min-h-screen">
             <Container className="justify-center items-center">
-                <div className="w-full flex overflow-x-auto gap-x-10">
+                <div className="w-full flex overflow-x-auto gap-x-10 lg:justify-center">
                     {
                         headItems.map((i) => {
                             return <HeadItem onClick={() => setSelectedItem(i)} Icon={Plane} title="Aviation & Tourism" solid={selectedHeadItem.name == i.name} />
@@ -82,11 +82,11 @@ export default function SectionE() {
                 </div>
             </Container>
         </div>
-        <div className="w-full min-h-screen flex justify-center items-center">
+        <div id="abt" className="w-full min-h-screen flex justify-center items-center">
             <div className="flex justify-center">
                 <div className="flex-col-reverse lg:flex-row w-[94%] min-h-[95vh] lg:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
                     <div className="">
-                        <div className="text-3xl hidden lg:block w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
+                        <div id="#about" className="text-3xl hidden lg:block w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
                             About us
                         </div>
                         <p className="font-wa lg:w-[525px] text-[#5B5B5B]">

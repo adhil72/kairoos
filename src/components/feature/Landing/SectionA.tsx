@@ -52,7 +52,7 @@ export default function SectionA() {
                         </div>
                     </div>
 
-                    <Button className="w-[100px] md:w-[140px] h-[33.65] lg:min-w-[188.71px] lg:h-[59px] text-white bottom-0 absolute lg:mt-3 -mb-[100px] lg:mb-4 ml-10 md:ml-[100px] lg:ml-[40px] xl:ml-[3%] z-30">
+                    <Button className="w-[130px] md:w-[140px] h-[33.65] lg:min-w-[188.71px] lg:h-[59px] text-white bottom-0 absolute lg:mt-3 -mb-[100px] lg:mb-4 ml-10 md:ml-[100px] lg:ml-[40px] xl:ml-[3%] z-30">
                         Join Now
                     </Button>
                     <button
