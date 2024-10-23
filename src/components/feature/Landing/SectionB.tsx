@@ -32,7 +32,7 @@ export default function SectionB() {
                         <Node />
                         <div className="w-1 h-full bg-tint-alt absolute"></div>
                     </div>
-                    <p className="font-bold text-[43px] text-tint-b leading-[57px] pr-5">
+                    <p className="font-bold text-[29.1px] lg:text-[43px] text-tint-b leading-[57px] pr-5">
                         Best Aviation, Logistics,& Hospital Administration Institute in Kerala
                     </p>
                 </div>

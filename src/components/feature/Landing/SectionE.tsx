@@ -5,11 +5,12 @@ import Med from "./assets/Med";
 import Image from "next/image";
 import Button from "@/components/common/Button";
 import ArrowT from "./assets/ArrowT";
+import { useState } from "react";
 
-function HeadItem({ Icon, title, solid }: { Icon: any, title: string, solid?: boolean }) {
-    return <div className={`flex px-20 py-3 items-center gap-x-5 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
+function HeadItem({ Icon, title, solid, onClick }: { Icon: any, title: string, solid?: boolean, onClick?: () => void }) {
+    return <div onClick={onClick} className={`flex px-20 py-3 items-center gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
         <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
-        <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[16px] leading-[18px] font-[400] w-100px`}>{title}</span>
+        <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[16px] leading-[18px] font-[400] min-w-[200px] text-center`}>{title}</span>
     </div>
 }
 
@@ -25,14 +26,24 @@ function Badge({ title, number, right }: { title: string, number: string, right?
         </div>
     </div>
 }
+
+const headItems = [
+    { name: "Aviation & Tourism", Icon: Plane },
+    { name: "Logistics", Icon: Logistics },
+    { name: "Hospital Administration", Icon: Med },
+]
+
 export default function SectionE() {
+    const [selectedHeadItem, setSelectedItem] = useState(headItems[0])
     return <section className="w-full bg-[#EDFDFE]">
         <div className="w-full min-h-screen">
             <Container className="justify-center items-center">
-                <div className="w-full overflow-x-auto flex gap-x-5 justify-center">
-                    <HeadItem Icon={Plane} title="Aviation & Tourism" solid />
-                    <HeadItem Icon={Logistics} title="Logistics" />
-                    <HeadItem Icon={Med} title="Hospital Administration" />
+                <div className="w-full flex overflow-x-auto gap-x-10">
+                    {
+                        headItems.map((i) => {
+                            return <HeadItem onClick={() => setSelectedItem(i)} Icon={Plane} title="Aviation & Tourism" solid={selectedHeadItem.name == i.name} />
+                        })
+                    }
                 </div>
                 <div className="flex gap-x-10 mt-10 flex-col lg:flex-row">
                     <div className="flex-1">
@@ -61,7 +72,7 @@ export default function SectionE() {
                             number="04"
                             right
                         />
-                        <div className="flex justify-end">
+                        <div className="flex justify-center">
                             <Button alt className="flex items-center text-white gap-x-3">
                                 View More
                                 <ArrowT className="" />

@@ -8,7 +8,7 @@ import Button from "@/components/common/Button"
 import Link from "next/link"
 
 export default function TopBadge() {
-    return <div className="bg-tint flex justify-center items-center p-2">
+    return <div className="w-full ovxhi bg-tint flex justify-center items-center p-2">
         <div className="flex items-center p-2 border border-tint-alt rounded-[30px] px-3">
             <span className="font-semibold text-alt text-sm mr-3">
                 Follow

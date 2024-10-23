@@ -10,22 +10,22 @@ export default function SectionC() {
         <div className="w-[80%] lg:w-[60%] flex justify-center items-center relative min-h-[80vh]">
             <Image
                 src={"/images/med.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="right-0 bottom-0 absolute mb-20 lg:mb-40"
             />
             <Image
                 src={"/images/ship.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="top-0 right-0 absolute m-20"
             />
             <Image
                 src={"/images/airoplane.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="left-0 bottom-0 absolute mb-10 lg:mb-52"
             />
