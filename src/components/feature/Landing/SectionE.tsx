@@ -8,9 +8,9 @@ import ArrowT from "./assets/ArrowT";
 import { useState } from "react";
 
 function HeadItem({ Icon, title, solid, onClick }: { Icon: any, title: string, solid?: boolean, onClick?: () => void }) {
-    return <div onClick={onClick} className={`flex cursor-pointer px-20 py-3 items-center gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
+    return <div onClick={onClick} className={`flex cursor-pointer px-10 lg:px-20 py-3 items-center lg:gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
         <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
-        <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[16px] leading-[18px] font-[400] min-w-[200px] text-center`}>{title}</span>
+        <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[12.42px] leading-[13.97px] lg:text-[16px] lg:leading-[18px] font-[400] min-w-[200px] text-center`}>{title}</span>
     </div>
 }
 
@@ -38,10 +38,10 @@ export default function SectionE() {
     return <section className="w-full bg-[#EDFDFE]">
         <div className="w-full min-h-screen">
             <Container className="justify-center items-center">
-                <div className="w-full flex overflow-x-auto gap-x-10 lg:justify-center">
+                <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 lg:justify-center">
                     {
                         headItems.map((i) => {
-                            return <HeadItem onClick={() => setSelectedItem(i)} Icon={Plane} title="Aviation & Tourism" solid={selectedHeadItem.name == i.name} />
+                            return <HeadItem onClick={() => setSelectedItem(i)} Icon={i.Icon} title={i.name} solid={selectedHeadItem.name == i.name} />
                         })
                     }
                 </div>
