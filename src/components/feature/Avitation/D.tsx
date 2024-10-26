@@ -19,7 +19,7 @@ export default function D() {
                             className="rounded-lg"
                         />
 
-                        <button className="absolute bottom-0 right--80 md:right-0 bg-[#187593] w-[145px] h-[35px] text-white rounded-full text-sm text-center font-semibold border-white border-4 hover:bg-tint-alt">
+                        <button className="absolute bottom-0 right-0 md:right-0 bg-[#187593] w-[145px] h-[35px] text-white rounded-full text-sm text-center font-semibold border-white border-4 hover:bg-tint-alt">
                             {location}
                         </button>
                     </div>
@@ -28,13 +28,13 @@ export default function D() {
         </Container>
         <section className="w-full min-h-[30vh]">
             <Container className="items-center">
-                <span className="font-[400] text-[22px] leading-[57px] text-[#187593]">Check Out Our</span>
-                <span className="font-[400] text-[43px] leading-[57px] text-[#187593]">Aviation Course Videos</span>
+                <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[57px] font-[400]">Check Out Our</span>
+                <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[57px] font-[400] text-center">Aviation Course Videos</span>
 
-                <div className="w-full flex overflow-x-auto gap-x-5 lg:justify-center">
+                <div className="w-full flex overflow-x-auto gap-x-5 lg:justify-center mt-5">
                     {
                         [1, 2, 3].map((i) => (
-                            <div key={i} className="w-[278.16px] min-w-[278.16px] h-[181.17px] rounded-[27.26px] overflow-hidden relative flex items-center justify-center">
+                            <div key={i} className="w-[201.92px] min-w-[201.92px] h-[114.16px] lg:w-[278.16px] lg:h-[181.17px] rounded-[27.26px] overflow-hidden relative flex items-center justify-center">
                                 <div className="absolute w-full h-full bg-opacity-30 flex items-center justify-center bg-black z-10">
                                     <Youtube className="absolute fill-red-700 z-20 w-[63px] h-[44px]" />
                                 </div>

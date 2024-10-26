@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './Container';
+import Button from './Button';
 
 const Placements = () => {
   const placementMembers = [
@@ -10,7 +11,7 @@ const Placements = () => {
   ];
 
   return <section id='placements' className="w-full bg-[#E0F7F8] relative">
-    <Container className="max-w-6xl mx-auto px-6 text-center">
+    <Container className="text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6 relative">
         Placements
         <img
@@ -36,25 +37,27 @@ const Placements = () => {
 
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-        {placementMembers.map((member, index) => (
-          <div key={index} className="p-6 bg-[#E0F7F8]">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="mx-auto mb-4 object-cover"
-            />
-            <h3 className="text-sm">{member.name}</h3>
-            <p className="text-gray-600 text-xs">{member.role}</p>
-          </div>
-        ))}
-
+      <div className='flex justify-center'>
+        <div className="w-fit grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          {placementMembers.map((member, index) => (
+            <div key={index} className="p-6 bg-[#E0F7F8] flex flex-col items-center">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="object-cover w-[143.94px] h-[169.5px]"
+              />
+              <h3 className="text-sm">{member.name}</h3>
+              <p className="text-gray-600 text-xs">{member.role}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <button className="relative bg-[#0FAAD1] text-white py-2 px-6 rounded-full hover:bg-[#135e6e]">
-        View More
-
-      </button>
+      <div className="flex justify-center">
+        <Button className='text-white w-fit' alt>
+          View More
+        </Button>
+      </div>
       <img
         src={"/placements/ringSmall.png"}
         alt="ring"

@@ -82,14 +82,14 @@ const CoursesSection: React.FC = () => {
   return (
     <section className="text-center py-16">
       <Container>
-        <h2 className="text-[43px] font-bold text-[#187593] mb-6 max-w-6xl mx-auto">
+        <h2 className="text-[43px] font-bold text-[#187593] mb-6">
           Explore Our Aviation & Airport Management Courses
         </h2>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-600 mb-12 ">
           Uncover your potential with our best courses, created for your successful future. Our complete training program can help you succeed in any area you choose, whether it be aviation, logistics, or hospitality.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-14">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -106,7 +106,7 @@ const CoursesSection: React.FC = () => {
               </div>
 
               <div className="p-6 flex flex-col justify-center text-left">
-                <h3 className="text-xl font-semibold text-tint mb-4">
+                <h3 className="text-xl font-semibold text-tint mb-4 font-wa">
                   {course.title}
                 </h3>
 
@@ -117,24 +117,24 @@ const CoursesSection: React.FC = () => {
                     width={30}
                     alt="timer icon"
                   />
-                  <div className="ml-2 w-full text-gray-600">{course.duration}</div>
+                  <div className="ml-2 w-full text-gray-600 font-wa">{course.duration}</div>
                 </div>
 
-                <div className="flex items-center justify-center mb-4">
+                <div className="flex items-center w-full justify-start mb-4">
                   <Image
                     src={'/images/done.png'}
                     height={30}
                     width={30}
                     alt="eligibility icon"
                   />
-                  <p className="ml-2 text-gray-600">{course.eligibility}</p>
+                  <div className="ml-2 text-gray-600 font-wa flex justify-start">{course.eligibility}</div>
                 </div>
 
                 <div className="flex justify-between">
-                  <button className="border border-[#187593] text-[#187593] px-4 py-2 rounded hover:bg-blue-50">
+                  <button className="border-[#187593] font-[400] text-[10.2px] text-[#187593] px-4 py-2 rounded-[19.67px] border-[0.42px] hover:bg-blue-50">
                     Apply Now
                   </button>
-                  <button className="border border-[#187593] text-[#187593] px-4 py-2 rounded hover:bg-blue-50">
+                  <button className="border-[#187593] font-[400] text-[10.2px] text-[#187593] px-4 py-2 rounded-[19.67px] border-[0.42px] hover:bg-blue-50">
                     Know More
                   </button>
                 </div>

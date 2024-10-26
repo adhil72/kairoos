@@ -25,7 +25,7 @@ const FAQ = () => {
 
   return (
     <section className="py-12 bg-[#F8F8F8]">
-      <Container className="max-w-6xl mx-auto px-6 text-center">
+      <Container className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6">FAQ</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

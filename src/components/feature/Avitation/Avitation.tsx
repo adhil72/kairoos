@@ -1,6 +1,12 @@
 "use client";
 
 import SectionG from '../Landing/SectionG';
+import SectionH from '../Landing/SectionH';
+import SectionI from '../Landing/SectionI';
+import SectionJ from '../Landing/SectionJ';
+import SectionK from '../Landing/SectionK';
+import SectionL from '../Landing/SectionL';
+import SectionM from '../Landing/SectionM';
 import A from './A';
 import B from './B';
 import C from './C';
@@ -25,7 +31,11 @@ export default function Avitation() {
             <F />
             <G />
             <H />
+            <SectionH />
             <I />
+            <SectionI />
+            <SectionK />
+            <SectionM />
         </div>
     );
 }
