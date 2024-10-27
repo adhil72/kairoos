@@ -41,8 +41,8 @@ export default function SectionH() {
   return (
     <section className="w-full min-h-[60vh]">
       <Container className="items-center">
-        <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593]">Testimonials</span>
-        <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593]">About our Institution</span>
+        <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593] text-center">Testimonials</span>
+        <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593] text-center">About our Institution</span>
         <div className="flex flex-col lg:flex-row mt-10 lg:mt-0 gap-y-10 lg:gap-y-0">
           <div className="flex-1 flex lg:justify-end">
             <img
