@@ -7,104 +7,122 @@ import Button from "@/components/common/Button";
 import ArrowT from "./assets/ArrowT";
 import { useState } from "react";
 
-function HeadItem({ Icon, title, solid, onClick }: { Icon: any, title: string, solid?: boolean, onClick?: () => void }) {
-    return <div onClick={onClick} className={`flex cursor-pointer px-10 lg:px-20 py-3 items-center lg:gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'}`}>
-        <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
-        <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[12.42px] leading-[13.97px] lg:text-[16px] lg:leading-[18px] font-[400] min-w-[200px] text-center`}>{title}</span>
-    </div>
-}
-
-function Badge({ title, number, right }: { title: string, number: string, right?: boolean }) {
-    return <div className={`w-full flex ${right ? 'justify-end' : 'justify-start'}`}>
-        <div className="w-[300px] flex items-center justify-center px-5 py-3 border-2 border-[#2FC5E1] rounded-[46.2px]">
-            <div className="border-2 border-[#2FC5E1] text-[13.1px] font-[400] p-4 flex justify-center bg-[#D2F7FB] items-center rounded-full gap-x-10">
-                {number}
-            </div>
-            <span className="text-[#187593] text-[11.76px] leading-[12.15px] font-[400] ml-3">
+function HeadItem({ Icon, title, solid, onClick }: { Icon: any; title: string; solid: boolean; onClick: () => void }) {
+    return (
+        <div
+            onClick={onClick}
+            className={`flex cursor-pointer px-10 lg:px-20 py-3 items-center lg:gap-x-5 transition-all duration-200 rounded-[30px] ${
+                solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'
+            }`}
+        >
+            <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
+            <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[12.42px] leading-[13.97px] lg:text-[16px] lg:leading-[18px] font-[400] min-w-[200px] text-center`}>
                 {title}
             </span>
         </div>
-    </div>
+    );
+}
+
+function Badge({ title, number, right }: { title: string; number: string; right?: boolean }) {
+    return (
+        <div className={`w-full flex ${right ? 'justify-end' : 'justify-start'}`}>
+            <div className="w-[350px] px-[36.11px] flex items-center justify-center py-3 border-2 border-[#2FC5E1] rounded-[46.2px]">
+                <div className="border-2 border-[#2FC5E1] text-[13.1px] font-[400] p-4 flex justify-center bg-[#D2F7FB] items-center rounded-full gap-x-10">
+                    {number}
+                </div>
+                <span className="text-[#187593] text-[11.76px] leading-[12.15px] font-[400] ml-3">{title}</span>
+            </div>
+        </div>
+    );
 }
 
 const headItems = [
     { name: "Aviation & Tourism", Icon: Plane },
     { name: "Logistics", Icon: Logistics },
     { name: "Hospital Administration", Icon: Med },
-]
+];
+
+const badgeData = {
+    "Aviation & Tourism": [
+        { title: "BBA AVIATION", number: "01" },
+        { title: "DIPLOMA IN AIRLINE & AIRPORT MANAGEMENT", number: "02", right: true },
+        { title: "DIPLOMA IN CABIN CREW MANAGEMENT", number: "03" },
+        { title: "DIPLOMA IN AIR FARE AND TICKETING MANAGEMENT", number: "04", right: true },
+    ],
+    "Logistics": [
+        { title: "BBA LOGISTICS", number: "01" },
+        { title: "DIPLOMA IN SHIPPING AND LOGISTICS MANAGEMENT", number: "02", right: true },
+        { title: "DIPLOMA IN SUPPLY CHAIN MANAGEMENT", number: "03" },
+        { title: "CERTIFICATE IN WAREHOUSING", number: "04", right: true },
+    ],
+    "Hospital Administration": [
+        { title: "BBA HOSPITAL ADMINISTRATION", number: "01" },
+        { title: "DIPLOMA IN HEALTHCARE MANAGEMENT", number: "02", right: true },
+        { title: "DIPLOMA IN MEDICAL RECORDS MANAGEMENT", number: "03" },
+        { title: "CERTIFICATE IN HOSPITALITY SERVICES", number: "04", right: true },
+    ],
+};
 
 export default function SectionE() {
-    const [selectedHeadItem, setSelectedItem] = useState(headItems[0])
-    return <section className="w-full bg-[#EDFDFE]">
-        <div className="w-full min-h-screen">
-            <Container className="justify-center items-center">
-                <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 lg:justify-center">
-                    {
-                        headItems.map((i) => {
-                            return <HeadItem onClick={() => setSelectedItem(i)} Icon={i.Icon} title={i.name} solid={selectedHeadItem.name == i.name} />
-                        })
-                    }
-                </div>
-                <div className="flex gap-x-10 mt-10 flex-col lg:flex-row">
-                    <div className="flex-1">
-                        <img
-                            src="/images/landing/plane_b.png"
-                            alt=""
-                            className="flex-1"
-                        />
+    const [selectedHeadItem, setSelectedItem] = useState(headItems[0]);
+
+    return (
+        <section className="w-full bg-[#EDFDFE]">
+            <div className="w-full min-h-screen">
+                <Container className="justify-center items-center">
+                    <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 justify-start h-[75px]">
+                        {headItems.map((i) => (
+                            <HeadItem
+                                key={i.name}
+                                onClick={() => setSelectedItem(i)}
+                                Icon={i.Icon}
+                                title={i.name}
+                                solid={selectedHeadItem.name === i.name}
+                            />
+                        ))}
                     </div>
-                    <div className="flex-1 flex flex-col gap-y-5 mt-5 lg:mt-0">
-                        <Badge
-                            title="BBA AVIATION"
-                            number="01"
-                        />
-                        <Badge
-                            title="DIPLOMA IN AIRLINE & AIRPORT MANAGEMENT"
-                            number="02"
-                            right
-                        />
-                        <Badge
-                            title="DIPLOMA IN CABIN CREW MANAGEMENT"
-                            number="03"
-                        />
-                        <Badge
-                            title="DIPLOMA IN AIR FARE AND TICKETING MANAGEMENT"
-                            number="04"
-                            right
-                        />
-                        <div className="flex justify-center">
-                            <Button alt className="flex items-center text-white gap-x-3">
-                                View More
-                                <ArrowT className="" />
-                            </Button>
+                    <div className="flex gap-x-10 mt-10 flex-col lg:items-center lg:flex-row">
+                        <div className="flex-1">
+                            <img src="/images/landing/plane_b.png" alt="" className="flex-1" />
+                        </div>
+                        <div className="flex-1 flex flex-col gap-y-5 mt-5 lg:mt-0">
+                            {(badgeData as any)[(selectedHeadItem as any).name].map((badge:any, idx:any) => (
+                                <Badge key={idx} title={badge.title} number={badge.number} right={badge.right} />
+                            ))}
+                            <div className="flex justify-center">
+                                <Button alt className="flex items-center text-white gap-x-3">
+                                    View More
+                                    <ArrowT />
+                                </Button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Container>
-        </div>
-        <div id="abt" className="w-full min-h-screen flex justify-center items-center">
-            <div className="flex justify-center">
-                <div className="flex-col-reverse lg:flex-row w-[94%] min-h-[95vh] lg:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
-                    <div className="">
-                        <div id="#about" className="text-3xl hidden lg:block w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
-                            About us
+                </Container>
+            </div>
+            <div id="abt" className="w-full flex justify-center items-center py-20">
+                <div className="flex justify-center">
+                    <div className="flex-col-reverse lg:flex-row w-[94%] min-h-[95vh] lg:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
+                        <div className="">
+                            <div id="#about" className="text-3xl hidden lg:block w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
+                                About Us
+                            </div>
+                            <p className="font-wa lg:w-[525px] text-[#5B5B5B]">
+                                Kairos Institute is renowned for providing the best courses in the aviation, tourism, logistics, shipping, and hospitality industries, which offer wide job opportunities in India and abroad. Our courses are structured with the latest curriculum and practical lessons to make students job-ready, and this is what makes us one of the best aviation and logistics colleges in Kerala and Bangalore. If you want to know more about our courses and specialties,
+                            </p>
+                            <div className="flex w-full justify-center lg:justify-start">
+                                <Button className="text-white my-4" alt>
+                                    Click Here
+                                </Button>
+                            </div>
                         </div>
-                        <p className="font-wa lg:w-[525px] text-[#5B5B5B]">
-                            Kairos Institute is renowned for providing the best courses in the aviation, tourism, logistics, shipping, and hospitality industries, which offer wide job opportunities in India and abroad. Our courses are structured with the latest curriculum and practical lessons to make students job-ready, and this is what makes us one of the best aviation and logistics colleges in Kerala and Bangalore. If you want to know more about our courses and specialties,
-                        </p>
-                        <div className="flex w-full justify-center lg:justify-start">
-                            <Button className="text-white my-4" alt>
-                                Click Here
-                            </Button>
+                        <div className="w-0 lg:w-[100px]"></div>
+                        <img src="/images/landing/im_f.png" className="w-[340px] lg:-mt-[80px] object-contain" />
+                        <div className="text-3xl lg:hidden w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
+                            About Us
                         </div>
-                    </div>
-                    <div className="w-0 lg:w-[100px]"></div>
-                    <img src="/images/landing/im_f.png" className="w-[340px] lg:-mt-[80px]" />
-                    <div className="text-3xl lg:hidden w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
-                        About us
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    );
 }

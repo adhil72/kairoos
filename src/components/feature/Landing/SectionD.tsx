@@ -3,9 +3,9 @@ import Container from "@/components/common/Container";
 import Image from "next/image";
 
 export default function SectionD() {
-    return <section className="w-full flex justify-center">
+    return <section className="w-full overflow-x-hidden flex justify-center">
         <Container className="min-h-[60vh] lg:min-h-[80vh]">
-            <div className="flex justify-between items-center lg:hidden">
+            <div className="w-full flex justify-between items-center lg:hidden -mr-10">
                 <div className="flex flex-col items-center gap-y-10 lg:hidden">
                     <Image
                         width={75}
@@ -99,7 +99,7 @@ export default function SectionD() {
                         height={759}
                         src={"/images/landing/arrow_b.png"}
                         alt="im_a"
-                        className="ml-[200px]"
+                        className="mt-[130px] ml-[100px] absolute"
                     />
                     <Image
                         width={110}
@@ -109,7 +109,7 @@ export default function SectionD() {
                     />
                 </div>
             </div>
-            <div className="relative flex justify-center items-center">
+            <div className="relative flex justify-center items-center -ml-10">
                 <Button className="mt-10 text-white" alt>Join Us Today</Button>
                 <Image
                     src={"/images/landing/plane.png"}

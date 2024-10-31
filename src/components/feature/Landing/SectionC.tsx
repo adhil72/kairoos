@@ -33,7 +33,7 @@ export default function SectionC() {
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl gap-y-4 flex flex-col items-center justify-center py-2">
                     <Cource />
                     <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
-                    <span className="font-[400] text-[12px] text-[#187593]">Cources</span>
+                    <span className="font-[400] text-[12px] text-[#187593]">Courses</span>
                 </div>
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Student />

@@ -77,7 +77,7 @@ export default function SectionF() {
             <Container className="items-center">
                 <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[57px] font-[400]">Why Kairos Institute?</span>
                 <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col lg:flex-row mt-[83px]">
                     <div className="w-full md:w-[80%] md:h-[409px] relative">
                         <Image
                             src={'/images/landing/im_g.png'}
@@ -86,13 +86,13 @@ export default function SectionF() {
                             className="!static object-contain"
                         />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 flex justify-start">
                         <p className="font-wa font-[500] text-[14px] leading-[26px] pt-5 text-[#5B5B5B]">
                             Kairos Institute provides international exposure to students. Through international exposure, we ensure that our students elevate their credentials, promote professional and personal development, ensure confidence and independence, and have the opportunity to interact with global academia.
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full overflow-x-auto my-10 gap-x-10" ref={scrollRef}>
+                <div className="flex w-full overflow-x-auto my-[36px] gap-x-10" ref={scrollRef}>
                     {
                         data.map((d, i) => (
                             <Box key={i} count={d.count} desc={d.desc} />

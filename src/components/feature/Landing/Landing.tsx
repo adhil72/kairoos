@@ -1,4 +1,3 @@
-import Container from "@/components/common/Container";
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
@@ -9,11 +8,6 @@ import SectionG from "./SectionG";
 import SectionH from "./SectionH";
 import SectionI from "./SectionI";
 import SectionJ from "./SectionJ";
-import Image from "next/image";
-import Youtube from "@/assets/Youtube";
-import ArrowT from "./assets/ArrowT";
-import ArrowTr from "./assets/ArrowTr";
-import Button from "@/components/common/Button";
 import SectionK from "./SectionK";
 import SectionL from "./SectionL";
 import SectionM from "./SectionM";
@@ -35,11 +29,5 @@ export default function Landing() {
         <SectionL />
         <SectionM />
         <SectionN />
-
-
-
-
-
-
     </div>
 }

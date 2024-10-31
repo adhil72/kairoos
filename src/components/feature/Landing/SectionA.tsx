@@ -1,8 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import { ChevronLeft, ChevronRight, LucideChevronRight } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import { LucideChevronRight } from "lucide-react"
 import BoxBg from "@/assets/BoxBg"
 import Container from "@/components/common/Container"
 import Button from "@/components/common/Button"
@@ -48,7 +47,7 @@ export default function SectionA() {
                         </div>
                         {/* Updated Image */}
                         <div className="flex-1 lg:h-[392.5px] flex justify-center items-center">
-                            <img src={sliderData[currentSlide].image} alt="slide image" className="w-[60%] object-cover" />
+                            <img src={sliderData[currentSlide].image} alt="slide image" className="w-[100%] object-contain max-h-[392.5px]" />
                         </div>
                     </div>
 

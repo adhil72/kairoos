@@ -3,7 +3,9 @@ import Instagram from "@/assets/Instagram"
 import LinkedIn from "@/assets/LinkedIn"
 import Twitter from "@/assets/Twitter"
 import Whatsapp from "@/assets/Whatsapp"
+import WhatsappB from "@/assets/WhatsappB"
 import Youtube from "@/assets/Youtube"
+import YoutubeB from "@/assets/YoutubeB"
 import Button from "@/components/common/Button"
 import Link from "next/link"
 
@@ -18,7 +20,7 @@ export default function TopBadge() {
                     <Twitter fill="#187593" />
                 </IconCircle>
                 <IconCircle>
-                    <Whatsapp fill="#187593" />
+                    <WhatsappB fill="#187593" />
                 </IconCircle>
                 <IconCircle>
                     <Instagram fill="#187593" />
@@ -30,7 +32,7 @@ export default function TopBadge() {
                     <Facebook fill="#187593" />
                 </IconCircle>
                 <IconCircle>
-                    <Youtube fill="#187593" />
+                    <YoutubeB fill="#187593" />
                 </IconCircle>
             </div>
         </div>
