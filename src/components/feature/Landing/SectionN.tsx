@@ -3,7 +3,7 @@ import Container from "@/components/common/Container";
 export default function SectionN() {
     return <section className="w-full">
         <Container>
-            <div className="mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 rounded-[40px] w-full">
+            <div className="lg:mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 rounded-[40px] w-full">
                 <h3 className="text-3xl font-bold text-center mb-8">Form Fill</h3>
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input

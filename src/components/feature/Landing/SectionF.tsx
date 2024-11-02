@@ -62,21 +62,21 @@ export default function SectionF() {
 
     const scrollLeft = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+            scrollRef.current.scrollBy({ left: -365, behavior: "smooth" });
         }
     };
 
     const scrollRight = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+            scrollRef.current.scrollBy({ left: 365, behavior: "smooth" });
         }
     };
 
     return (
         <section className="w-full">
             <Container className="items-center">
-                <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[57px] font-[400]">Why Kairos Institute?</span>
-                <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
+                <span className="text-[#187593] text-[15.52px] lg:text-[22px] lg:leading-[57px] font-[400] text-center">Why Kairos Institute?</span>
+                <span className="text-[#187593] text-[29px] lg:text-[43px] lg:leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
                 <div className="flex flex-col lg:flex-row mt-[83px]">
                     <div className="w-full md:w-[80%] md:h-[409px] relative">
                         <Image

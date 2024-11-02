@@ -8,6 +8,8 @@ import Container from "@/components/common/Container";
 import { LucidePhone } from "lucide-react";
 import Link from "next/link";
 import ArrowBLeft from "./assets/ArrowBLeft";
+import YoutubeB from "@/assets/YoutubeB";
+import WhatsappB from "@/assets/WhatsappB";
 
 export default function SectionG() {
     return <section className="w-full mb-16 min-h-[50vh]">
@@ -35,7 +37,7 @@ export default function SectionG() {
                                         <Twitter fill="#187593" />
                                     </IconCircle>
                                     <IconCircle>
-                                        <Whatsapp fill="#187593" />
+                                        <WhatsappB fill="#187593" />
                                     </IconCircle>
                                     <IconCircle>
                                         <Instagram fill="#187593" />
@@ -47,7 +49,7 @@ export default function SectionG() {
                                         <Facebook fill="#187593" />
                                     </IconCircle>
                                     <IconCircle>
-                                        <Youtube fill="#187593" />
+                                        <YoutubeB fill="#187593" />
                                     </IconCircle>
                                 </div>
                             </div>
@@ -73,7 +75,7 @@ export default function SectionG() {
                                     <Twitter fill="#187593" />
                                 </IconCircle>
                                 <IconCircle>
-                                    <Whatsapp fill="#187593" />
+                                    <WhatsappB fill="#187593" />
                                 </IconCircle>
                                 <IconCircle>
                                     <Instagram fill="#187593" />
@@ -85,7 +87,7 @@ export default function SectionG() {
                                     <Facebook fill="#187593" />
                                 </IconCircle>
                                 <IconCircle>
-                                    <Youtube fill="#187593" />
+                                    <YoutubeB fill="#187593" />
                                 </IconCircle>
                             </div>
                         </div>

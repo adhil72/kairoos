@@ -70,7 +70,7 @@ export default function SectionE() {
         <section className="w-full bg-[#EDFDFE]">
             <div className="w-full min-h-screen">
                 <Container className="justify-center items-center">
-                    <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 justify-start h-[75px]">
+                    <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 justify-start h-[60px] lg:h-[75px]">
                         {headItems.map((i) => (
                             <HeadItem
                                 key={i.name}

@@ -35,7 +35,7 @@ export default function SectionA() {
     }, [])
 
     return (
-        <section className="w-full">
+        <section className="w-full min-h-[550px] lg:min-h-min">
             <Container className="py-5">
                 <div className="w-full lg:h-[392.5px] relative lg:mx-[30px]">
                     <BoxBg className="absolute inset-0 w-full h-full z-0 hidden lg:block" />
@@ -51,7 +51,7 @@ export default function SectionA() {
                         </div>
                     </div>
 
-                    <Button className="w-[130px] md:w-[140px] h-[33.65] lg:min-w-[188.71px] lg:h-[59px] text-white bottom-0 absolute lg:mt-3 -mb-[100px] lg:mb-4 ml-7 md:ml-[100px] lg:ml-[40px] xl:ml-[3%] z-30">
+                    <Button className="w-[130px] md:w-[140px] h-[33.65] lg:min-w-[188.71px] lg:h-[59px] text-white bottom-0 absolute lg:mt-3 -mb-[95px] lg:mb-4 ml-3 md:ml-[100px] lg:ml-[40px] xl:ml-[3%] z-30">
                         Join Now
                     </Button>
                     <button

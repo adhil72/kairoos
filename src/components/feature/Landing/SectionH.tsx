@@ -52,7 +52,7 @@ export default function SectionH() {
             />
           </div>
           <div className="flex-1 px-5">
-            <p className="font-wa font-[500] text-[14px] leading-[26px]">{currentTestimonial.text}</p>
+            <p className="font-wa h-[150px] overflow-y-auto font-[500] text-[14px] leading-[26px]">{currentTestimonial.text}</p>
             <div>
               <span className="text-[#187593] font-[400] text-[17px] leading-[57px]">{currentTestimonial.name}</span> <br />
               <span className="font-wa font-[600] text-[16px] leading-[26px]">{currentTestimonial.role}</span>

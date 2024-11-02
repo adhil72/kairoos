@@ -109,7 +109,7 @@ export default function SectionD() {
                     />
                 </div>
             </div>
-            <div className="relative flex justify-center items-center -ml-10">
+            <div className="relative flex justify-center items-center">
                 <Button className="mt-10 text-white" alt>Join Us Today</Button>
                 <Image
                     src={"/images/landing/plane.png"}
