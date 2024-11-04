@@ -89,7 +89,7 @@ const CoursesSection: React.FC = () => {
           Uncover your potential with our best courses, created for your successful future. Our complete training program can help you succeed in any area you choose, whether it be aviation, logistics, or hospitality.
         </p>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {courses.map((course, index) => (
             <div
               key={index}

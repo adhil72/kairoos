@@ -15,7 +15,15 @@ const sliderData = [
     {
         title: 'The Best Logistics Institute in Kerala & Bangalore',
         image: '/images/landing/im.png',
-    }
+    },
+    {
+        title: 'Advanced Logistics, Supply Chain Management & Shipping Management Courses in Kerala & Bangalore',
+        image: '/images/landing/im.png',
+    },
+    {
+        title: 'The Best Logistics Institute in Kerala & Bangalore',
+        image: '/images/landing/im.png',
+    },
 ]
 
 export default function SectionA() {
@@ -60,7 +68,34 @@ export default function SectionA() {
                         <LucideChevronRight className="w-[50%] h-[50%] text-[#2FC5E1]" />
                     </button>
                 </div>
+                <div className="w-full flex justify-center mt-[8.5rem] lg:mt-10">
+                    <NavIndex current={currentSlide} count={sliderData.length} />
+                </div>
             </Container>
         </section>
     )
+}
+
+function NavIndex({ count, current }: { current: number, count: number }) {
+    return <div className="w-fit flex items-center">
+        {
+            Array(count).fill(0).map((_, i) => {
+                return <>
+                    {
+                        i == current ?
+                            <div className="w-[53px] h-[53px] text-[#FFFFFF] flex justify-center items-center font-wa font-[600] text-[8.92px] leading-[11.58px] bg-[#D2F7FB] rounded-full">
+                                <div className="w-[32.81px] h-[32.81px] text-[#FFFFFF] flex justify-center items-center font-wa font-[600] text-[17.13px] leading-[22.23px] bg-[#2FC5E1] rounded-full">
+                                    {i + 1}
+                                </div>
+                            </div>
+                            :
+                            <div className="w-[17.9px] h-[17.9px] text-[#FFFFFF] flex justify-center items-center font-wa font-[600] text-[8.92px] leading-[11.58px] bg-[#2FC5E1] rounded-full">
+                                {i + 1}
+                            </div>
+                    }
+                    {i != count-1 && <div className="h-[1.37px] w-[43.41px] bg-[#8CC9D7]"></div>}
+                </>
+            })
+        }
+    </div>
 }

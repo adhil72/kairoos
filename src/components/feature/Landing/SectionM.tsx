@@ -52,12 +52,7 @@ export default function SectionM() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="absolute -left-4 sm:-left-12 top-1/2 -translate-y-1/2">
-              <CarouselPrevious className="relative left-0" />
-            </div>
-            <div className="absolute -right-4 sm:-right-12 top-1/2 -translate-y-1/2">
-              <CarouselNext className="relative right-0" />
-            </div>
+           
           </Carousel>
         )}
 

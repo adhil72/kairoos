@@ -47,7 +47,7 @@ const WhyAviationSection: React.FC = () => {
         </div>
 
         <div className="md:w-1/2 justify-center relative hidden lg:flex">
-          <img src="/images/Qplane.png" className="w-[362px] h-[526px] object-cover" />
+          <img src="/images/Qplane.png" className="w-[362px] h-[526px] object-contain" />
         </div>
 
       </Container>
