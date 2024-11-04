@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "@/components/common/Container";
 import Image from "next/image";
 import B1 from "./assets/B1";
@@ -8,6 +8,8 @@ import { LucideChevronLeft, LucideChevronRight } from "lucide-react";
 import Node from "@/assets/Node";
 import B from "./assets/B";
 import Circle from "./assets/Circle";
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const data = [
     {
@@ -58,19 +60,28 @@ function Box({ count, desc }: { count: string, desc: string }) {
 }
 
 export default function SectionF() {
-    const scrollRef = useRef<any>(null);
+    const [api, setApi] = React.useState<CarouselApi>()
+
+    useEffect(() => {
+        if (!api) {
+            return
+        }
+
+        api.on("select", () => {
+            setCurrent(api.selectedScrollSnap())
+        })
+    }, [api])
 
     const scrollLeft = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: -365, behavior: "smooth" });
-        }
-    };
+        api?.scrollPrev()
+    }
 
     const scrollRight = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: 365, behavior: "smooth" });
-        }
-    };
+        api?.scrollNext()
+    }
+
+    const [current, setCurrent] = useState(0)
+
 
     return (
         <section className="w-full">
@@ -92,13 +103,27 @@ export default function SectionF() {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full overflow-x-auto my-[36px] gap-x-10" ref={scrollRef}>
-                    {
-                        data.map((d, i) => (
-                            <Box key={i} count={d.count} desc={d.desc} />
-                        ))
-                    }
-                </div>
+                <Carousel
+                    setApi={setApi}
+                    opts={{
+                        align: "start",
+                    }}
+                    className="w-full my-10"
+                >
+                    <CarouselContent>
+                        {
+                            data.map((d, i) => (
+                                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
+                                    <Box key={i} count={d.count} desc={d.desc} />
+                                </CarouselItem>
+                            ))
+                        }
+                    </CarouselContent>
+                </Carousel>
+
+                {/* <div className="flex w-full overflow-x-auto my-[36px] gap-x-10" ref={scrollRef}>
+
+                </div> */}
 
                 <div className="flex w-full">
                     <div className="flex-1 flex items-center">
