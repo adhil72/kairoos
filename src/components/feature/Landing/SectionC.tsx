@@ -6,8 +6,8 @@ import Student from "./assets/Student";
 import Image from "next/image";
 
 export default function SectionC() {
-    return <section className="w-full bg-[#F8F8F8] flex justify-center min-h-[650px]">
-        <div className="w-[80%] lg:w-[60%] flex justify-center items-center relative min-h-[80vh]">
+    return <section className="w-full bg-[#F8F8F8] flex justify-center min-h-[650px] md:min-h-[750px]">
+        <div className="w-[80%] lg:w-[60%] flex justify-center items-center relative">
             <Image
                 src={"/images/med.png"}
                 width={60}
@@ -29,7 +29,7 @@ export default function SectionC() {
                 alt="ship"
                 className="left-0 bottom-0 absolute mb-10 lg:mb-52"
             />
-            <div className="grid grid-cols-2 w-full bg lg:w-[500px] lg:h-[450px]">
+            <div className="grid grid-cols-2 w-full bg md:w-[500px] md:h-[450px]">
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl gap-y-4 flex flex-col items-center justify-center py-2">
                     <Cource />
                     <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
