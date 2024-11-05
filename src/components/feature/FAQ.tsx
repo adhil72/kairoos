@@ -35,10 +35,10 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
                 className="flex justify-between items-center w-full text-left"
               >
-                <h3 className=" text-[#187593]">{faq.question}</h3>
+                <h3 className=" text-[#187593] text-[11px] leading-[21px] font-[400]">{faq.question}</h3>
                 <span  className='border border-[#187593] rounded-[50%] p-3'>{activeIndex === index ? '^' : 'v'}</span>
               </button>
-              {activeIndex === index && <p className=" text-gray-600">{faq.answer}</p>}
+              {activeIndex === index && <p className=" text-gray-600 font-wa font-sml text-[14px] leading-[26px]">{faq.answer}</p>}
             </div>
           ))}
         </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function D() {
     return <>
         <Container className="text-center py-8">
-            <h2 className="text-[29px] md:text-[35px] font-bold text-[#187593] mb-16 max-w-6xl mx-auto">
+            <h2 className="text-[29px] md:text-[35px] md:leading-[45px] leading-[39px] font-bold text-[#187593] mb-16 max-w-6xl mx-auto">
                 Locations of Our Aviation
                 & Airport Management Colleges</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto py-6">
