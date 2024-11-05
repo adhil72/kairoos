@@ -16,7 +16,6 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-lg md:text-xl  text-[#187593] mb-6">Testimonials</h2>
         <h1 className="text-[29px] md:text-[46px] md:text-4xl font-bold text-[#187593] mb-6">About our Institution</h1>
-        
         <div className="relative">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-6 mb-4 rounded-lg">
@@ -38,9 +37,7 @@ const Testimonials = () => {
               <h4 className="font-bold">{testimonial.name}</h4>
               <p className="text-gray-500">{testimonial.role}</p>
             </div>
-          ))}
-
-          
+          ))}          
         </div>
       </div>
     </section>

@@ -9,11 +9,11 @@ import Node from "@/assets/Node";
 import Image from "next/image";
 
 function IconButton({ Icon, title, url }: { Icon: any, title: string, url: string }) {
-    return <Link href={"#"} className="flex flex-col items-center group mx-2 lg:mx-5">
+    return <Link href={"#"} className="flex flex-col items-center justify-top group mx-2 lg:mx-5">
         <div className="w-[81.8px] h-[81.8px] border-2 rounded-full overflow-hidden border-tint-alt bg-white group-hover:bg-tint-alt transition-all ease-in-out flex items-center justify-center">
             <Icon className="fill-tint-alt group-hover:fill-white w-[27px] h-[27px] transition-all ease-in-out" />
         </div>
-        <span className="wa-ff mt-[14px] text-[13px] leading-[13px] font-[600]">
+        <span className="wa-ff mt-[14px] text-[13px] leading-[13px] font-[600] text-[#187593] text-center">
             {title}
         </span>
     </Link>
@@ -32,7 +32,7 @@ export default function SectionB() {
                         <Node />
                         <div className="w-1 h-full bg-tint-alt absolute"></div>
                     </div>
-                    <p className="font-bold text-[43px] text-tint-b leading-[57px] pr-5">
+                    <p className="font-bold text-[29.1px] lg:text-[43px] text-tint-b leading-[57px] pr-5">
                         Best Aviation, Logistics,& Hospital Administration Institute in Kerala
                     </p>
                 </div>
@@ -56,15 +56,12 @@ export default function SectionB() {
                 />
             </div>
         </Container>
-        <Container className="w-full flex !flex-row items-center -mt-40 justify-between lg:justify-normal">
+        <Container className="w-full  flex !flex-row !items-center -mt-28 justify-between lg:justify-normal">
             <IconButton Icon={Whatsapp} title="Whatsapp" url="/aviation" />
             <VLine />
-            <IconButton Icon={Phone} title="Whatsapp" url="/aviation" />
+            <IconButton Icon={Phone} title="Enquire Now" url="/aviation" />
             <VLine />
-            <IconButton Icon={Cloud} title="Whatsapp" url="/aviation" />
-            <div className="h-1 flex-1 bg-tint-alt hidden lg:block">
-            </div>
-            <Node className="hidden lg:block" />
+            <IconButton Icon={Cloud} title="Download Broucher" url="/aviation" />
         </Container>
     </section>
 }

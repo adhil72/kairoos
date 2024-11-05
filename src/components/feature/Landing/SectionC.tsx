@@ -6,26 +6,26 @@ import Student from "./assets/Student";
 import Image from "next/image";
 
 export default function SectionC() {
-    return <section className="w-full bg-[#F8F8F8] flex justify-center">
+    return <section className="w-full bg-[#F8F8F8] flex justify-center min-h-[650px]">
         <div className="w-[80%] lg:w-[60%] flex justify-center items-center relative min-h-[80vh]">
             <Image
                 src={"/images/med.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="right-0 bottom-0 absolute mb-20 lg:mb-40"
             />
             <Image
                 src={"/images/ship.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="top-0 right-0 absolute m-20"
             />
             <Image
                 src={"/images/airoplane.png"}
-                width={90}
-                height={90}
+                width={60}
+                height={60}
                 alt="ship"
                 className="left-0 bottom-0 absolute mb-10 lg:mb-52"
             />
@@ -33,7 +33,7 @@ export default function SectionC() {
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl gap-y-4 flex flex-col items-center justify-center py-2">
                     <Cource />
                     <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
-                    <span className="font-[400] text-[12px] text-[#187593]">Cources</span>
+                    <span className="font-[400] text-[12px] text-[#187593]">Courses</span>
                 </div>
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Student />
