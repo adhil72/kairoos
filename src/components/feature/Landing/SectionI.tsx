@@ -19,7 +19,7 @@ export default function SectionI() {
                 GANDHIYAN SEVANA PURASKARAM<br />2020 - 22
             </p>
             <br />
-            <span className="font-[400] lg:hidden text-[40.25px] text-[#D2F7FB]">2020 - 2022</span>
+            <span className="w-screen flex justify-center font-[400] lg:hidden text-[40.25px] text-[#D2F7FB]">2020 - 2022</span>
         </Container>
     </section>
 }

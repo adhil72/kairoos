@@ -11,12 +11,11 @@ function HeadItem({ Icon, title, solid, onClick }: { Icon: any; title: string; s
     return (
         <div
             onClick={onClick}
-            className={`flex cursor-pointer px-10 lg:px-20 py-3 items-center lg:gap-x-5 transition-all duration-200 rounded-[30px] ${
-                solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'
-            }`}
+            className={`flex cursor-pointer px-10 md:px-20 py-3 items-center md:gap-x-5 transition-all duration-200 rounded-[30px] ${solid ? 'bg-gradient-to-r from-[#2FC5E1] to-[#187593] text-white' : 'bg-white border-4 border-[#D2F7FB]'
+                }`}
         >
             <Icon className={`${solid ? 'fill-white' : 'fill-[#13A8C7]'}`} />
-            <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[12.42px] leading-[13.97px] lg:text-[16px] lg:leading-[18px] font-[400] min-w-[200px] text-center`}>
+            <span className={`${solid ? 'text-white' : 'text-[#187593]'} text-[12.42px] leading-[13.97px] md:text-[16px] md:leading-[18px] font-[400] min-w-[200px] text-center`}>
                 {title}
             </span>
         </div>
@@ -68,9 +67,9 @@ export default function SectionE() {
 
     return (
         <section className="w-full bg-[#EDFDFE]">
-            <div className="w-full min-h-screen">
+            <div className="w-full">
                 <Container className="justify-center items-center">
-                    <div className="w-full flex overflow-x-auto gap-x-3 lg:gap-x-10 justify-start h-[60px] lg:h-[75px]">
+                    <div className="w-full flex overflow-x-auto gap-x-3 md:gap-x-10 justify-start h-[60px] md:h-[75px]">
                         {headItems.map((i) => (
                             <HeadItem
                                 key={i.name}
@@ -81,12 +80,12 @@ export default function SectionE() {
                             />
                         ))}
                     </div>
-                    <div className="flex gap-x-10 mt-10 flex-col lg:items-center lg:flex-row">
-                        <div className="flex-1">
-                            <img src="/images/landing/plane_b.png" alt="" className="flex-1" />
+                    <div className="flex gap-x-10 mt-10 flex-col md:items-center md:flex-row">
+                        <div className="flex-1 h-full">
+                            <img src="/images/landing/plane_b.png" alt="" className="flex-1 h-full object-cover" />
                         </div>
-                        <div className="flex-1 flex flex-col gap-y-5 mt-5 lg:mt-0">
-                            {(badgeData as any)[(selectedHeadItem as any).name].map((badge:any, idx:any) => (
+                        <div className="flex-1 flex flex-col gap-y-5 mt-5 md:mt-0">
+                            {(badgeData as any)[(selectedHeadItem as any).name].map((badge: any, idx: any) => (
                                 <Badge key={idx} title={badge.title} number={badge.number} right={badge.right} />
                             ))}
                             <div className="flex justify-center">
@@ -101,23 +100,26 @@ export default function SectionE() {
             </div>
             <div id="abt" className="w-full flex justify-center items-center py-20">
                 <div className="flex justify-center">
-                    <div className="flex-col-reverse lg:flex-row w-[94%] min-h-[95vh] lg:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
+                    <div className="flex-col-reverse md:flex-row w-[94%] md:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
                         <div className="">
-                            <div id="#about" className="text-3xl hidden lg:block w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
+                            <div id="#about" className="text-3xl hidden md:block w-full md:text-[43px] text-[#2FC5E1] my-4 text-center md:text-left">
                                 About Us
                             </div>
                             <p className="font-wa lg:w-[525px] text-[#5B5B5B]">
                                 Kairos Institute is renowned for providing the best courses in the aviation, tourism, logistics, shipping, and hospitality industries, which offer wide job opportunities in India and abroad. Our courses are structured with the latest curriculum and practical lessons to make students job-ready, and this is what makes us one of the best aviation and logistics colleges in Kerala and Bangalore. If you want to know more about our courses and specialties,
                             </p>
-                            <div className="flex w-full justify-center lg:justify-start">
+                            <div className="flex w-full justify-center md:justify-start">
                                 <Button className="text-white my-4" alt>
                                     Click Here
                                 </Button>
                             </div>
                         </div>
                         <div className="w-0 lg:w-[100px]"></div>
-                        <img src="/images/landing/im_f.png" className="w-[340px] lg:-mt-[80px] object-contain" />
-                        <div className="text-3xl lg:hidden w-full lg:text-[43px] text-[#2FC5E1] my-4 text-center lg:text-left">
+                        <div className="w-full flex justify-center md:hidden">
+                            <img src="/images/landing/im_f.png" className="w-[340px] md:w-[261.17px] lg:-mt-[80px] object-cover" />
+                        </div>
+                        <img src="/images/landing/im_f.png" className="w-[340px] md:w-[261.17px] lg:-mt-[80px] object-cover hidden md:block" />
+                        <div className="text-3xl md:hidden w-full md:text-[43px] text-[#2FC5E1] my-4 text-center md:text-left">
                             About Us
                         </div>
                     </div>
