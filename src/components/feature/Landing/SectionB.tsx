@@ -56,7 +56,7 @@ export default function SectionB() {
                 />
             </div>
         </Container>
-        <Container className="w-full  flex !flex-row !items-top -mt-28 justify-between lg:justify-normal">
+        <Container className="w-full  flex !flex-row !items-center -mt-28 justify-between lg:justify-normal">
             <IconButton Icon={Whatsapp} title="Whatsapp" url="/aviation" />
             <VLine />
             <IconButton Icon={Phone} title="Enquire Now" url="/aviation" />
