@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from './Container';
 import Button from './Button';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
+import { CardContent } from '../ui/card';
 
 const Placements = () => {
   const placementMembers = [
@@ -38,19 +40,23 @@ const Placements = () => {
       </h2>
 
       <div className='flex justify-center'>
-        <div className="w-fit grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-          {placementMembers.map((member, index) => (
-            <div key={index} className="p-6 bg-[#E0F7F8] flex flex-col items-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="object-cover w-[143.94px] h-[169.5px]"
-              />
-              <h3 className="text-sm">{member.name}</h3>
-              <p className="text-gray-600 text-xs">{member.role}</p>
-            </div>
-          ))}
-        </div>
+        <Carousel className="w-full">
+          <CarouselContent>
+            {placementMembers.map((member, index) => (
+              <CarouselItem className='sm:basis-1/2 md:basis-1/3 lg:basis-1/4'>
+                <div key={index} className="p-6 bg-[#E0F7F8] flex flex-col items-center">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="object-cover w-[143.94px] h-[169.5px]"
+                  />
+                  <h3 className="text-sm">{member.name}</h3>
+                  <p className="text-gray-600 text-xs">{member.role}</p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
 
       <div className="flex justify-center">
