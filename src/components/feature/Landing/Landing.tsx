@@ -25,5 +25,9 @@ export default function Landing() {
         <SectionJ />
         <SectionH />
         <SectionI />
+        <SectionK />
+        <SectionL />
+        <SectionM />
+        <SectionN />
     </div>
 }

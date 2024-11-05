@@ -6,7 +6,7 @@ import Student from "./assets/Student";
 import Image from "next/image";
 
 export default function SectionC() {
-    return <section className="w-full bg-[#F8F8F8] flex justify-center">
+    return <section className="w-full bg-[#F8F8F8] flex justify-center min-h-[650px]">
         <div className="w-[80%] lg:w-[60%] flex justify-center items-center relative min-h-[80vh]">
             <Image
                 src={"/images/med.png"}

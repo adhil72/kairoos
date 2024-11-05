@@ -26,7 +26,7 @@ function HeadItem({ Icon, title, solid, onClick }: { Icon: any; title: string; s
 function Badge({ title, number, right }: { title: string; number: string; right?: boolean }) {
     return (
         <div className={`w-full flex ${right ? 'justify-end' : 'justify-start'}`}>
-            <div className="w-[350px] px-[36.11px] flex items-center justify-center py-3 border-2 border-[#2FC5E1] rounded-[46.2px]">
+            <div className="w-[275.84px] md:w-[350px] px-[36.11px] flex items-center justify-center py-3 border-2 border-[#2FC5E1] rounded-[46.2px]">
                 <div className="border-2 border-[#2FC5E1] text-[13.1px] font-[400] p-4 flex justify-center bg-[#D2F7FB] items-center rounded-full gap-x-10">
                     {number}
                 </div>

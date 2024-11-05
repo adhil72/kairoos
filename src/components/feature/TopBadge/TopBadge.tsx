@@ -10,9 +10,9 @@ import Button from "@/components/common/Button"
 import Link from "next/link"
 
 export default function TopBadge() {
-    return <div className="w-full ovxhi bg-tint flex justify-center items-center p-2">
-        <div className="flex items-center p-2 border border-tint-alt rounded-[30px] px-3">
-            <span className="font-semibold text-alt text-sm mr-3">
+    return <div className="w-full bg-tint flex justify-center items-center p-2">
+        <div className="flex items-center p-[10.8] border border-tint-alt rounded-[30px] px-3">
+            <span className="font-[400] leading-[10.05px] text-alt text-[7.42px] lg:text-sm mr-3">
                 Follow
             </span>
             <div className="gap-x-3 flex py-1">
@@ -36,14 +36,14 @@ export default function TopBadge() {
                 </IconCircle>
             </div>
         </div>
-        <Button alt className="ml-3">
+        <button className="ml-3 bg-[#AAEDF7] text-[#0C3040] text-[7.76px] rounded-[35.89px] font-[400] leading-[14.45px] px-[16.5px] lg:px-[31.5px] py-[8.02px] lg:py-[8.5px] lg:text-[13.35px] lg:leading-[14.9px]">
             Apply now
-        </Button>
+        </button>
     </div>
 }
 
 function IconCircle({ children, ...props }: React.HTMLProps<HTMLDivElement>) {
-    return <Link href={""} className="w-6 h-6 p-0.5 rounded-full overflow-hidden bg-tint-alt flex">
+    return <Link href={""} className="w-[17.54px] h-[17.54px] lg:w-6 lg:h-6 p-0.5 rounded-full overflow-hidden bg-tint-alt flex">
         <div className="flex-1 bg-white rounded-full p-1 flex items-center justify-center">
             {children}
         </div>

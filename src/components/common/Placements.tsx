@@ -17,7 +17,7 @@ const Placements = () => {
         <img
           src={"/placements/ring.png"}
           alt="ring"
-          className="w-[57px] h-[57px]"
+          className="w-[16.49px] h-[16.49px] lg:w-[57px] lg:h-[57px]"
         />
         <img
           src={"/placements/decor1.png"}
@@ -32,7 +32,7 @@ const Placements = () => {
         <img
           src={"/placements/rightS.png"}
           alt="ring"
-          className="absolute w-[64px] h-[65px] -right-4 bottm-0"
+          className="absolute w-[40.42px] h-[40.42px] lg:w-[64px] lg:h-[65px] -right-4 bottom-0"
         />
 
       </h2>

@@ -16,7 +16,7 @@ export default function SectionI() {
                 <img src="/images/landing/rb_d.png" alt="" className="absolute z-20 w-[85px] h-[80px] bottom-0 right-0 -mt-[70px] lg:-mr-[70px]" />
             </div>
             <p className="font-wa font-[600] text-[12.61px] leading-[18.43px] lg:text-[19px] lg:leading-[23px] text-center text-[#187593]">
-                GANDHIYAN SEVANA<br />PURASKARAM 2020 - 22
+                GANDHIYAN SEVANA PURASKARAM<br />2020 - 22
             </p>
             <br />
             <span className="font-[400] lg:hidden text-[40.25px] text-[#D2F7FB]">2020 - 2022</span>
