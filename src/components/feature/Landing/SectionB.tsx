@@ -76,7 +76,7 @@ export default function SectionB() {
                 <div className="flex-1 justify-end  hidden lg:flex">
                     <img
                         src="/images/landing/im_e.png"
-                        className="w-[406px]"
+                        className="w-[350px] object-contain"
                         alt="img_e"
                     />
                 </div>

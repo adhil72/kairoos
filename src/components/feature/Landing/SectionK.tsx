@@ -5,7 +5,7 @@ export default function SectionK() {
     return <section className="w-full overflow-x-hidden">
         <Container className="items-center">
             <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593]">Latest</span>
-            <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593]">News & Event</span>
+            <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593] text-center">News & Event</span>
 
             <Carousel className="w-full max-w-5xl">
                 <CarouselContent className="">
