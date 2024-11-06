@@ -25,8 +25,8 @@ function HeadItem({ Icon, title, solid, onClick }: { Icon: any; title: string; s
 function Badge({ title, number, right }: { title: string; number: string; right?: boolean }) {
     return (
         <div className={`w-full flex ${right ? 'justify-end' : 'justify-start'}`}>
-            <div className="w-[275.84px] md:w-[350px] px-[36.11px] flex items-center justify-center py-3 border-2 border-[#2FC5E1] rounded-[46.2px]">
-                <div className="border-2 border-[#2FC5E1] text-[13.1px] font-[400] p-4 flex justify-center bg-[#D2F7FB] items-center rounded-full gap-x-10">
+            <div className="w-[275.84px] md:w-[350px] px-[36.11px] flex items-center justify-center py-3 border-[0.87px] border-[#2FC5E1] rounded-[46.2px]">
+                <div className="border-[0.87px] border-[#2FC5E1] text-[13.1px] font-[400] p-4 flex justify-center bg-[#D2F7FB] items-center rounded-full gap-x-10">
                     {number}
                 </div>
                 <span className="text-[#187593] text-[11.76px] leading-[12.15px] font-[400] ml-3">{title}</span>
@@ -100,7 +100,7 @@ export default function SectionE() {
             </div>
             <div id="abt" className="w-full flex justify-center items-center py-20">
                 <div className="flex justify-center">
-                    <div className="flex-col-reverse md:flex-row w-[94%] md:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] rounded-bl-[40px] rounded-tr-[40px] rounded-br-[204px] flex">
+                    <div className="flex-col-reverse md:flex-row w-[94%] md:min-h-fit lg:w-fit bg-white p-10 rounded-tl-[40px] md:rounded-bl-[40px] rounded-bl-[154px] rounded-tr-[40px] rounded-br-[40px] flex">
                         <div className="">
                             <div id="#about" className="text-3xl hidden md:block w-full md:text-[43px] text-[#2FC5E1] my-4 text-center md:text-left">
                                 About Us
@@ -108,7 +108,7 @@ export default function SectionE() {
                             <p className="font-wa lg:w-[525px] text-[#5B5B5B]">
                                 Kairos Institute is renowned for providing the best courses in the aviation, tourism, logistics, shipping, and hospitality industries, which offer wide job opportunities in India and abroad. Our courses are structured with the latest curriculum and practical lessons to make students job-ready, and this is what makes us one of the best aviation and logistics colleges in Kerala and Bangalore. If you want to know more about our courses and specialties,
                             </p>
-                            <div className="flex w-full justify-center md:justify-start">
+                            <div className="flex w-full justify-center md:justify-start my-[22px] md:my-0">
                                 <Button className="text-white my-4" alt>
                                     Click Here
                                 </Button>

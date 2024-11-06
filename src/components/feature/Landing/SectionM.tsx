@@ -23,10 +23,10 @@ export default function SectionM() {
   return (
     <section className="">
       <Container className="items-center">
-        <span className="font-[400] text-[43px] lg:leading-[57px] text-[#187593]">Blog</span>
+        <span className="font-[400] lg:leading-[57px] text-[#187593] text-[29.1px] leading-[39.77px]">Blog</span>
 
         {isMounted && (
-          <Carousel className="w-full max-w-5xl mx-auto lg:mt-[55px] relative">
+          <Carousel className="w-full max-w-5xl mx-auto mt-3 lg:mt-[55px] relative">
             <CarouselContent>
               {blogItems.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

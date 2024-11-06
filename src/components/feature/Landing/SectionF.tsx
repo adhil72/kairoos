@@ -86,14 +86,14 @@ export default function SectionF() {
     return (
         <section className="w-full">
             <Container className="items-center">
-                <span className="text-[#187593] text-[15.52px] lg:text-[22px] lg:leading-[57px] font-[400] text-center">Why Kairos Institute?</span>
-                <span className="text-[#187593] text-[29px] lg:text-[43px] lg:leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
+                <span className="text-[#187593] text-[13.52px] lg:text-[22px] lg:leading-[57px] font-[400] text-center">Why Kairos Institute?</span>
+                <span className="text-[#187593] text-[23px] lg:text-[43px] lg:leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
                 <div className="flex flex-col lg:flex-row mt-[83px]">
                     <div className="w-full lg:w-[65%] relative">
                        <img src="/images/landing/im_g.png" alt="" className="w-full h-full object-contain" />
                     </div>
                     <div className="flex-1 flex justify-start">
-                        <p className="font-wa font-[500] px-5 text-start text-[14px] leading-[26px] pt-5 text-[#5B5B5B]">
+                        <p className="font-wa text-center md:text-start font-[500] px-5 text-[14px] leading-[26px] pt-5 text-[#5B5B5B]">
                             Kairos Institute provides international exposure to students. Through international exposure, we ensure that our students elevate their credentials, promote professional and personal development, ensure confidence and independence, and have the opportunity to interact with global academia.
                         </p>
                     </div>

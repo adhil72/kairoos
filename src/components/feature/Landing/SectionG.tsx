@@ -13,9 +13,9 @@ import WhatsappB from "@/assets/WhatsappB";
 
 export default function SectionG() {
     return <section className="w-full overflow-x-hidden ">
-        <Container className="md:flex-row items-center !mb-0">
-            {/* <span className="w-full text-center mb-[31px] capitalize font-[400] bg-black md:hidden text-[35px] leading-[37px] bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent">Do you want to speak to <br />
-                our career consultant?</span> */}
+        <Container className="md:flex-row items-center !py-0">
+            <span className="w-full text-center mb-[31px] capitalize font-[400] bg-black md:hidden text-[35px] leading-[37px] bg-gradient-to-l to-[#2FC5E1] from-[#0C3040] bg-clip-text text-transparent">Do you want to speak to <br />
+                our career consultant?</span>
             <div className="w-full md:w-fit flex justify-center">
                 <img src="/images/landing/im_h.png" alt="im_h" className="w-[80%] md:w-[318px] md:h-[517px] object-contain hidden md:block" />
                 <img src="/images/landing/im_h_b.png" alt="im_h" className="w-[80%] md:w-[318px] md:h-[517px] object-contain md:hidden" />
@@ -25,10 +25,9 @@ export default function SectionG() {
                     our career consultant?</span> */}
                 <p className="text-[#5B5B5B] font-wa font-[500] text-center md:text-start text-[14px] leading-[26px] mt-[20px]">
                     Ready to start your career? Talk to our career expert today! They'll help you understand our courses and enrollment process, ensuring you're set for success. Take that crucial first step towards securing your future with us. We're here to help you succeed, so don't wait – reach out now!</p>
-                <div className="relative w-full h-fit hidden lg:flex mt-[45px]">
+                <div className="relative w-full h-fit hidden lg:flex mt-[845px]">
                     <div>
                         <div className="flex mt-[45px] px-5 items-center gap-x-5 bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent font-[400] text-[23.78px]  lg:text-[28px] leading-[44px]">
-                            <LucidePhone className="text-[#2FC5E1]" />  +91 80 78 029 050
                         </div>
                         <div className="px-5 mt-2">
                             <div className="flex w-fit items-center p-2 border border-tint-alt rounded-[30px] px-3">
@@ -62,13 +61,13 @@ export default function SectionG() {
                 </div>
             </div>
         </Container>
-        <div className="w-full flex justify-center lg:hidden -mt-16">
+        <div className="w-full flex justify-center lg:hidden  mb-[100px]">
             <div className="w-fit relative h-fit flex">
                 <div>
                     <div className="flex mt-[45px] px-5 items-center gap-x-5 bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent font-[400] text-[23.78px]  lg:text-[28px] leading-[37.37px]">
                         <LucidePhone className="text-[#2FC5E1]" />  +91 80 78 029 050
                     </div>
-                    <div className="px-5 mt-2 flex justify-center">
+                    <div className="px-5 mt-30 flex justify-center">
                         <div className="flex w-fit items-center p-2 border border-tint-alt rounded-[30px] px-3">
                             <span className="text-[9.77px] leading-[13.23px] font-[400] text-black text-sm mr-3">
                                 Follow

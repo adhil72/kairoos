@@ -21,7 +21,7 @@ export default function SectionD() {
                         alt="im_a"
                     />
                 </div>
-                <div className="flex flex-col items-center gap-y-10 md:hidden">
+                <div className="flex flex-col items-center -mt-[80px] gap-y-10 md:hidden">
                     <Image
                         width={69.84}
                         height={69.84}

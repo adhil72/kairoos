@@ -20,7 +20,9 @@ function IconButton({ Icon, title, url }: { Icon: any, title: string, url: strin
 }
 
 function VLine() {
-    return <div className="bg-tint-alt bg-opacity-30 w-1 h-[35px] mx-2 lg:mx-5" />
+    return <div className="h-[60px] xs:h-[81.8px] flex items-center">
+        <div className="bg-tint-alt bg-opacity-30 w-[1.4px] h-[35px] mx-2 lg:mx-5" />
+    </div>
 }
 
 export default function SectionB() {
@@ -82,7 +84,7 @@ export default function SectionB() {
                 </div>
             </div>
         </Container>
-        <Container className="w-full flex !flex-row !items-center -mt-28 justify-between md:justify-normal md:hidden lg:flex">
+        <Container className="w-full flex !flex-row !items-start -mt-28 justify-between md:justify-normal md:hidden lg:flex">
             <IconButton Icon={Whatsapp} title="Whatsapp" url="/aviation" />
             <VLine />
             <IconButton Icon={Phone} title="Enquire Now" url="/aviation" />
@@ -93,6 +95,8 @@ export default function SectionB() {
                 <Node />
             </div>
         </Container>
+
+
         <Container className="!flex-row items-center hidden md:flex lg:hidden">
             <div className="h-[2px] flex-1 bg-[#70DDF0]" />
             <Node />

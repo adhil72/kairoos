@@ -54,7 +54,7 @@ function AppBar() {
       <Container className="flex !py-3 !flex-row justify-between items-center uppercase">
         <div className="w-full lg:w-fit flex justify-between items-center relative">
           {/* Mobile Menu */}
-          <div className="lg:hidden absolute">
+          <div className="lg:hidden absolute right-0">
             <Sheet>
               <SheetTrigger asChild>
                 <button>

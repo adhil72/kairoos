@@ -5,7 +5,7 @@ export default function SectionN() {
         <Container className="!px-0 md:!px-[80px] lg:!px-[150px]">
             <div className=" lg:mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 md:rounded-[40px] w-full">
                 <h3 className="text-[26px] font-[400] leading-[57px] text-center mb-8">Form Fill</h3>
-                <form className="grid grid-cols-1 md:grid-cols-2 gap-6 font-wa">
+                <form className="grid grid-cols-1 md:grid-cols-2 gap-6 font-wa text-[13px]">
                     <input
                         type="text"
                         placeholder="FULL NAME"
