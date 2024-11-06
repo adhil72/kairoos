@@ -52,9 +52,9 @@ function AppBar() {
   return (
     <div className="">
       <Container className="flex !py-3 !flex-row justify-between items-center uppercase">
-        <div className="w-full lg:w-fit flex justify-between items-center">
+        <div className="w-full lg:w-fit flex justify-between items-center relative">
           {/* Mobile Menu */}
-          <div className="lg:hidden">
+          <div className="lg:hidden absolute">
             <Sheet>
               <SheetTrigger asChild>
                 <button>
@@ -77,6 +77,7 @@ function AppBar() {
               </SheetContent>
             </Sheet>
           </div>
+          <div></div>
           {/* Logo */}
           <Image src={"/images/logo.png"} width={186} height={58} alt="Logo" />
           <div></div>
