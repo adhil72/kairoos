@@ -82,7 +82,7 @@ export default function SectionE() {
                     </div>
                     <div className="flex gap-x-10 mt-10 flex-col md:items-center md:flex-row">
                         <div className="flex-1 h-full">
-                            <img src="/images/landing/plane_b.png" alt="" className="flex-1 h-full object-cover" />
+                            <img src="/images/landing/plane_b.png" alt="" className="flex-1 h-[348px] md:h-full rounded-[27.03px] object-cover" />
                         </div>
                         <div className="flex-1 flex flex-col gap-y-5 mt-5 md:mt-0">
                             {(badgeData as any)[(selectedHeadItem as any).name].map((badge: any, idx: any) => (
