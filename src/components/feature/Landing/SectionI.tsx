@@ -6,7 +6,7 @@ export default function SectionI() {
             <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593]">Awards & Recognition</span>
             <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593]">Our Achievement</span>
             <div className="my-16 flex items-center relative justify-center">
-                <img src="/images/landing/im_k.png" className="w-full lg:w-[674px] lg:h-[409px] z-10" alt="" />
+                <img src="/images/landing/im_k.png" className="w-full md:w-[70%] lg:w-[674px] lg:h-[409px] z-10" alt="" />
                 <span className="w-screen text-center text-[150px] leading-[294.19px] text-[#D2F7FB] absolute -mt-[100px] hidden lg:block">
                     2020 - 2022
                 </span>

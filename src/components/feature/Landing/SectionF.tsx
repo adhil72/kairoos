@@ -87,7 +87,7 @@ export default function SectionF() {
         <section className="w-full">
             <Container className="items-center">
                 <span className="text-[#187593] text-[13.52px] lg:text-[22px] lg:leading-[57px] font-[400] text-center">Why Kairos Institute?</span>
-                <span className="text-[#187593] text-[23px] lg:text-[43px] lg:leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
+                <span className="text-[#187593] text-[23px] md:text-[39.76px] lg:text-[43px] lg:leading-[57px] font-[400] text-center">Experience a New Era <br />of Learning</span>
                 <div className="flex flex-col lg:flex-row mt-[83px]">
                     <div className="w-full lg:w-[65%] relative">
                        <img src="/images/landing/im_g.png" alt="" className="w-full h-full object-contain" />

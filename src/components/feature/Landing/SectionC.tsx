@@ -32,23 +32,23 @@ export default function SectionC() {
             <div className="grid grid-cols-2 w-full bg md:w-[500px] md:h-[450px]">
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl gap-y-4 flex flex-col items-center justify-center py-2">
                     <Cource />
-                    <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
+                    <span className="font-[400] text-xl md:text-[62.84px] md:leading-[56.59px] lg:text-[63px] text-[#1B4A5E]">10+</span>
                     <span className="font-[400] text-[12px] text-[#187593]">Courses</span>
                 </div>
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Student />
-                    <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">2K+</span>
+                    <span className="font-[400] text-xl md:text-[62.84px] md:leading-[56.59px] lg:text-[63px] text-[#1B4A5E]">2K+</span>
                     <span className="font-[400] text-[12px] text-[#187593] text-center">Trusted Students</span>
                 </div>
 
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Hand />
-                    <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
+                    <span className="font-[400] text-xl md:text-[62.84px] md:leading-[56.59px] lg:text-[63px] text-[#1B4A5E]">10+</span>
                     <span className="font-[400] text-[12px] text-[#187593] px-5 xs:px-0 text-center">Unique Features</span>
                 </div>
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl flex justify-center items-center flex-col gap-y-4 py-2">
                     <Badge />
-                    <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">06+</span>
+                    <span className="font-[400] text-xl  md:text-[62.84px] md:leading-[56.59px] lg:text-[63px] text-[#1B4A5E]">06+</span>
                     <span className="font-[400] text-[12px] text-[#187593]">Awards</span>
                 </div>
             </div>

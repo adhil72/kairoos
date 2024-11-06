@@ -6,18 +6,21 @@ import { LucideChevronLeft, LucideChevronRight } from "lucide-react";
 const testimonials = [
   {
     image: "/images/landing/im_i.png",
+    image_s: "/images/landing/ts_s.png",
     text: "Kairos gives me the best environment for my studies. They always provided me with the assistance that I required for my overall development and to improve my technical knowledge. I will always be grateful to them for providing me a platform of practical learning and preparing me for the future life. The teacher-student interaction was great. The teachers were very friendly because of which I could clarify many of my doubts.",
     name: "Ashmi Basheer",
     role: "Student",
   },
   {
     image: "/images/landing/im_i.png",
+    image_s: "/images/landing/ts_s.png",
     text: "Kairos has been instrumental in helping me develop the skills I needed to excel in my career. The supportive environment was key to my growth.",
     name: "John Doe",
     role: "Engineer",
   },
   {
     image: "/images/landing/im_i.png",
+    image_s: "/images/landing/ts_s.png",
     text: "My experience at Kairos was transformative, allowing me to develop both personally and professionally. The teachers provided constant support.",
     name: "Jane Smith",
     role: "Designer",
@@ -42,18 +45,24 @@ export default function SectionH() {
     <section className="w-full">
       <Container className="items-center">
         <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593] text-center">Testimonials</span>
-        <span className="font-[400] capitalize text-[29.1px] lg:text-[43px] text-[#187593] text-center">About
-          <br /> our Institution</span>
+        <span className="font-[400] capitalize text-[29.1px] md:text-[39.76px] lg:text-[43px] text-[#187593] text-center">About our Institution</span>
         <div className="flex justify-center flex-col lg:flex-row mt-10 lg:mt-0 gap-y-10 lg:gap-y-0">
           <div className="flex-1 flex justify-center lg:justify-end">
             <img
-              className="w-[282.94px] object-right h-[266.82px] object-contain"
+              className="w-[282.94px] object-right h-[266.82px] object-contain hidden lg:block"
               src={currentTestimonial.image}
               alt={currentTestimonial.name}
             />
+
+            <img
+              className="w-[282.94px] object-right h-[266.82px] object-contain lg:hidden"
+              src={currentTestimonial.image_s}
+              alt={currentTestimonial.name}
+            />
+
           </div>
           <div className="flex-1 px-5">
-            <p className="font-wa h-[150px] max-w-[500px] overflow-y-auto font-[500] text-[14px] leading-[26px] text-center lg:text-start">{currentTestimonial.text}</p>
+            <p className="font-wa h-[150px] max-w-[500px] overflow-y-auto font-[500] text-[#5B5B5B] text-[14px] leading-[26px] text-center lg:text-start">{currentTestimonial.text}</p>
             <div className="flex items-center lg:items-start flex-col mt-[17px] lg:mt-0">
               <span className="text-[#187593] font-[400] text-[17px] lg:leading-[57px]">{currentTestimonial.name}</span>
               <span className="font-wa font-[600] text-[16px] lg:leading-[26px]">{currentTestimonial.role}</span>

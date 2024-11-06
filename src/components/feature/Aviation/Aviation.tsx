@@ -18,13 +18,13 @@ import H from './H';
 import I from './I';
 
 
-export default function Avitation() {
+export default function Aviation() {
 
     return (
         <div className="bg-white min-h-screen">
             <A />
             <B />
-            <SectionG />
+            <SectionG hideTitle/>
             <C />
             <D />
             <E />

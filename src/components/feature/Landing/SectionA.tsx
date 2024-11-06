@@ -50,7 +50,7 @@ export default function SectionA() {
                     <BoxBgS className="absolute inset-0 w-full z-0 md:hidden " style={{ height: 'calc(100% + 100px)' }} />
                     <div className="w-full md:h-[300.5px] relative z-20 flex flex-col-reverse md:flex-row justify-between">
                         {/* Updated Title */}
-                        <div className="w-full min-h-[170px] text-[16.1px] leading-[23.65px] md:w-[60%] h-full lg:text-[32px] lg:leading-[47px] flex justify-center items-center px-10">
+                        <div className="w-full min-h-[170px] text-[16.1px] md:text-[21px] leading-[23.65px] md:leading-[34px] md:w-[60%] h-full lg:text-[32px] lg:leading-[47px] flex justify-center items-center px-10">
                             {sliderData[currentSlide].title}
                         </div>
                         {/* Updated Image */}
@@ -69,7 +69,7 @@ export default function SectionA() {
                         <LucideChevronRight className="w-[50%] h-[50%] text-[#2FC5E1]" />
                     </button>
                 </div>
-                <div className="w-full flex justify-center mt-[8.5rem] lg:mt-10">
+                <div className="w-full flex justify-center mt-[8.5rem] md:mt-5 lg:mt-10">
                     <NavIndex current={currentSlide} count={sliderData.length} />
                 </div>
             </Container>

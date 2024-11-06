@@ -1,5 +1,5 @@
-import Avitation from "@/components/feature/Avitation/Avitation";
+import Aviation from "@/components/feature/Aviation/Aviation";
 
 export default function Page() {
-  return <Avitation />
+  return <Aviation />
 }

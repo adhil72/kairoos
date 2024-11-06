@@ -82,7 +82,7 @@ const CoursesSection: React.FC = () => {
   return (
     <section className="text-center">
       <Container>
-        <h2 className="text-[29.1px] leading-[39.77px] md:text-[39.76px] md:leading-[55px] lg:text-[43px] lg:leading-[57px] font-bold text-[#187593] mb-6">
+        <h2 className="text-[29.1px] font-[400] leading-[39.77px] md:text-[39.76px] md:leading-[55px] lg:text-[43px] lg:leading-[57px] text-[#187593] mb-6">
           Explore Our Aviation & Airport Management Courses
         </h2>
         <p className="text-gray-600 mb-12 font-wa font-[500] text-[15.52px] leading-[25.22px]">

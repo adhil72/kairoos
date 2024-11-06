@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function D() {
     return <>
         <Container className="text-center !py-0">
-            <h2 className="text-[29px] md:text-[35px] md:leading-[45px] leading-[39px] font-bold text-[#187593] mb-16 max-w-6xl mx-auto">
+            <h2 className="text-[29px] md:text-[35px] md:leading-[45px] leading-[39px] font-[400] text-[#187593] mb-16 max-w-6xl mx-auto">
                 Locations of Our Aviation
                 & Airport Management Colleges</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto py-6">
@@ -29,7 +29,9 @@ export default function D() {
         <section className="w-full min-h-[30vh]">
             <Container className="items-center">
                 <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[55.29px] font-[400]">Watch</span>
-                <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[39.77px] font-[400] text-center">Aviation Course Videos</span>
+                <span className="text-[#187593] text-[29px] md:text-[39.76px] lg:text-[43px] leading-[39.77px] font-[400] text-center md:hidden">Aviation Course Videos</span>
+                <span className="text-[#187593] text-[29px] md:text-[39.76px] lg:text-[43px] leading-[39.77px] font-[400] text-center hidden md:flex">Our Videos</span>
+
 
                 <div className="w-full flex overflow-x-auto gap-x-5 md:justify-center mt-5">
                     {

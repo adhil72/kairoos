@@ -4,15 +4,20 @@ import { useState, useEffect } from 'react'
 import Container from "@/components/common/Container"
 import ArrowTr from "./assets/ArrowTr"
 import Button from "@/components/common/Button"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function SectionM() {
   const [isMounted, setIsMounted] = useState(false)
+  const [api, setApi] = useState<CarouselApi>()
 
   useEffect(() => {
     setIsMounted(true)
   }, [])
+
+  useEffect(() => {
+    api?.scrollNext()
+  }, [api])
 
   const blogItems = [
     { image: "/images/landing/im_o.png", mt: "mt-[72px]" },
@@ -22,11 +27,11 @@ export default function SectionM() {
 
   return (
     <section className="">
-      <Container className="items-center">
+      <Container  className="items-center">
         <span className="font-[400] lg:leading-[57px] text-[#187593] text-[29.1px] leading-[39.77px]">Blog</span>
 
         {isMounted && (
-          <Carousel className="w-full max-w-5xl mx-auto mt-3 lg:mt-[55px] relative">
+          <Carousel setApi={setApi} className="w-full max-w-5xl mx-auto mt-3 lg:mt-[55px] relative">
             <CarouselContent>
               {blogItems.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

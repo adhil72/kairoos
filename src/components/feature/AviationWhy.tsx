@@ -17,7 +17,7 @@ const WhyAviationSection: React.FC = () => {
           </div>
 
           <div className="w-[100%]">
-            <h2 className="text-[29px] md:text-[39px] lg:text-[43px] leading-[39px] lg:leading-[55px] font-bold text-[#187593] mb-6">
+            <h2 className=" text-[29px] md:text-[39px] md:text-center lg:text-start lg:text-[43px] leading-[39px] lg:leading-[55px] font-[400] text-[#187593] mb-6">
               Why Aviation Course?
             </h2>
             <div className="w-full flex justify-center relative">
