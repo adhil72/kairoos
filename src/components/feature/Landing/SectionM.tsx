@@ -21,7 +21,7 @@ export default function SectionM() {
   ]
 
   return (
-    <section className="py-12">
+    <section className="">
       <Container className="items-center">
         <span className="font-[400] text-[43px] lg:leading-[57px] text-[#187593]">Blog</span>
 

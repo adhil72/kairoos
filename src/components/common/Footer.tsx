@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
           </div>
           <div className='flex flex-col items-center lg:items-start mt-5'>
             <h3 className="text-[12px] font-semibold mb-4">Newsletter</h3>
-            <p className="mb-4 text-[12px] font-wa text-center lg:text-start w-[336px]">Keep In Touch With Us To Get Updates About Our Latest Information And News About Kairos Institute.</p>
+            <p className="mb-4 text-[12px] font-wa text-center lg:text-start xs:w-[336px]">Keep In Touch With Us To Get Updates About Our Latest Information And News About Kairos Institute.</p>
             <div className="w-full max-w-[336px] flex rounded-[26.5px] bg-[#D2F7FB] p-[4px]">
               <div className="flex-1 flex items-center">
                 <input placeholder='Email' type="text" className='w-full mx-4 outline-none bg-transparent font-wa font-[400] text-[11.15px] leading-[9.05px] text-[#187593]' />
@@ -156,7 +156,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <p className="mb-2 md:mb-0 text-center">&copy; COPYRIGHT 2017 - 2024 ALL RIGHTS RESERVED BY KAIROS INSTITUTE | PRIVACY POLICY | DISCLAIMER</p>
-
       </div>
     </div>
   );

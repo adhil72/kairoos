@@ -38,13 +38,13 @@ export default function SectionC() {
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Student />
                     <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">2K+</span>
-                    <span className="font-[400] text-[12px] text-[#187593]">Trusted Students</span>
+                    <span className="font-[400] text-[12px] text-[#187593] text-center">Trusted Students</span>
                 </div>
 
                 <div className="flex-1 flex justify-center items-center flex-col gap-y-4 py-2">
                     <Hand />
                     <span className="font-[400] text-xl lg:text-[63px] text-[#1B4A5E]">10+</span>
-                    <span className="font-[400] text-[12px] text-[#187593]">Unique Features</span>
+                    <span className="font-[400] text-[12px] text-[#187593] px-5 xs:px-0 text-center">Unique Features</span>
                 </div>
                 <div className="flex-1 border-2 border-tint-alt rounded-3xl flex justify-center items-center flex-col gap-y-4 py-2">
                     <Badge />

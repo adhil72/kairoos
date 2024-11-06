@@ -15,26 +15,30 @@ const Placements = () => {
   return <section id='placements' className="w-full bg-[#E0F7F8] relative">
     <Container className="text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-[#187593] mb-6 relative">
-        Placements
+        <div className="flex items-center justify-center gap-x-4">
+          <img
+            src={"/placements/decor1.png"}
+            alt="ring"
+            className="w-[21.51px] h-[44.62px] md:w-[34px] md:h-[70.52px] left-56 top-0 hidden xs:block"
+          />
+          Placements
+          <img
+            src={"/placements/decor2.png"}
+            alt="ring"
+            className="w-[21.51px] h-[44.62px] md:w-[34px] md:h-[70.52px] right-56 top-0 hidden xs:block"
+          />
+        </div>
+
         <img
           src={"/placements/ring.png"}
           alt="ring"
-          className="w-[16.49px] h-[16.49px] lg:w-[57px] lg:h-[57px]"
+          className="w-[16.49px] h-[16.49px] lg:w-[57px] lg:h-[57px] "
         />
-        <img
-          src={"/placements/decor1.png"}
-          alt="ring"
-          className="absolute w-[30px] h-[70px] left-56 top-0"
-        />
-        <img
-          src={"/placements/decor2.png"}
-          alt="ring"
-          className="absolute w-[30px] h-[70px] right-56 top-0"
-        />
+
         <img
           src={"/placements/rightS.png"}
           alt="ring"
-          className="absolute w-[40.42px] h-[40.42px] lg:w-[64px] lg:h-[65px] -right-4 bottom-0"
+          className="absolute w-[40.42px] h-[40.42px] lg:w-[64px] lg:h-[65px] -right-4 bottom-0 hidden xs:block"
         />
 
       </h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../common/Container';
 import Button from '../common/Button';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 
 const AviationFaculty = () => {
   const facultyMembers = [
@@ -12,8 +13,8 @@ const AviationFaculty = () => {
   ];
 
   return (
-    <section className="py-12">
-      <Container className="text-center">
+    <section className="">
+      <Container className="text-center !pt-0">
         <div className='relative'>
           <h2 className="relative text-3xl md:text-4xl font-bold text-[#187593] mb-6">
             <span className='text-[22px] font-[400]'>Team of Experienced</span>
@@ -29,20 +30,23 @@ const AviationFaculty = () => {
           </h2>
         </div>
 
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
-          {facultyMembers.map((member, index) => (
-            <div key={index} className="p-6">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="mx-auto mb-4 object-cover"
-              />
-              <span className="text-sm">{member.name}</span>
-              <p className="text-gray-600 text-xs">{member.designation}</p>
-            </div>
-          ))}
-        </div>
+        <Carousel>
+          <CarouselContent>
+            {facultyMembers.map((member, index) => (
+              <CarouselItem className='basis-1/2 md:basis-1/3 lg:basis-1/5'>
+                <div key={index} className="p-6">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="mx-auto mb-4 object-cover"
+                  />
+                  <span className="text-sm">{member.name}</span>
+                  <p className="text-gray-600 text-xs">{member.designation}</p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
 
         <div className="flex justify-center">
           <Button className="text-white w-fit" alt>

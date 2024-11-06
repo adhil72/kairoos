@@ -28,10 +28,10 @@ export default function D() {
         </Container>
         <section className="w-full min-h-[30vh]">
             <Container className="items-center">
-                <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[57px] font-[400]">Check Out Our</span>
-                <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[57px] font-[400] text-center">Aviation Course Videos</span>
+                <span className="text-[#187593] text-[15.52px] lg:text-[22px] leading-[55.29px] font-[400]">Watch</span>
+                <span className="text-[#187593] text-[29px] lg:text-[43px] leading-[39.77px] font-[400] text-center">Aviation Course Videos</span>
 
-                <div className="w-full flex overflow-x-auto gap-x-5 lg:justify-center mt-5">
+                <div className="w-full flex overflow-x-auto gap-x-5 md:justify-center mt-5">
                     {
                         [1, 2, 3].map((i) => (
                             <div key={i} className="w-[201.92px] min-w-[201.92px] h-[114.16px] lg:w-[278.16px] lg:h-[181.17px] rounded-[27.26px] overflow-hidden relative flex items-center justify-center">

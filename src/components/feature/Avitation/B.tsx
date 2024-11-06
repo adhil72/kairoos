@@ -14,8 +14,8 @@ export default function B() {
                 The career choices have now expanded beyond doctors and engineers to include the Airline, Aviation, and Hospitality sectors, both in India and internationally. If your dream aligns with this, Kairos, the best aviation institute, is here with branches conveniently located in Kochi, Thodupuzha, and Bengaluru. With expert instructors, advanced facilities, and hands-on training, we have been instrumental in guiding numerous students towards successful careers. Whether you dream of becoming a pilot, aircraft maintenance engineer, or air traffic controller, we have the courses and resources to help you succeed. With our 100% placement Assistance, you can rest assured that your future in aviation is in good hands. Choose the best aviation institute in Kerala and the best aviation institute in Bangalore to receive the best possible education. Our extensive network of industry connections and career placement services will help you land the job of your dreams after graduation.
             </span>
 
-            <div className="bg-white text-[#187593] py-4 pl-5 rounded-[45px] text-left max-w-4xl border-tint-alt border-2 flex mt-6 flex-col lg:flex-row">
-                <div className='text-center lg:text-start font-semibold'>
+            <div className="bg-white text-[#187593] py-4 px-5 rounded-[45px] text-left max-w-4xl border-tint-alt border-2 flex mt-6 flex-col lg:flex-row">
+                <div className='w-full text-center lg:text-start font-semibold'>
                     <p className="font-wa text-[15px] leading-[21px]">Admission for the next batch is closing soon.</p>
                     <p className="mb-2 font-wa text-[15px] leading-[21px]">Enroll now for the last few seats.</p>
                 </div>

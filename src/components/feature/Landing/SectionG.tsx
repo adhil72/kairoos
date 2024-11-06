@@ -12,8 +12,8 @@ import YoutubeB from "@/assets/YoutubeB";
 import WhatsappB from "@/assets/WhatsappB";
 
 export default function SectionG() {
-    return <section className="w-full overflow-x-hidden mb-16 min-h-[50vh]">
-        <Container className="md:flex-row items-center">
+    return <section className="w-full overflow-x-hidden ">
+        <Container className="md:flex-row items-center !mb-0">
             <span className="w-full text-center mb-[31px] capitalize font-[400] bg-black md:hidden text-[35px] leading-[37px] bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent">Do you want to speak to <br />
                 our career consultant?</span>
             <div className="w-full md:w-fit flex justify-center">
@@ -65,12 +65,12 @@ export default function SectionG() {
         <div className="mb-32 w-full flex justify-center lg:hidden -mt-16">
             <div className="w-fit relative h-fit flex">
                 <div>
-                    <div className="flex mt-[45px] px-5 items-center gap-x-5 bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent font-[400] text-[23.78px]  lg:text-[28px] leading-[44px]">
+                    <div className="flex mt-[45px] px-5 items-center gap-x-5 bg-gradient-to-r from-[#2FC5E1] to-[#0C3040] bg-clip-text text-transparent font-[400] text-[23.78px]  lg:text-[28px] leading-[37.37px]">
                         <LucidePhone className="text-[#2FC5E1]" />  +91 80 78 029 050
                     </div>
-                    <div className="px-5 mt-2">
+                    <div className="px-5 mt-2 flex justify-center">
                         <div className="flex w-fit items-center p-2 border border-tint-alt rounded-[30px] px-3">
-                            <span className="font-semibold text-black text-sm mr-3">
+                            <span className="text-[9.77px] leading-[13.23px] font-[400] text-black text-sm mr-3">
                                 Follow
                             </span>
                             <div className="gap-x-3 flex py-1">
@@ -103,7 +103,7 @@ export default function SectionG() {
 }
 
 function IconCircle({ children, ...props }: React.HTMLProps<HTMLDivElement>) {
-    return <Link href={""} className="w-8 h-8 p-[1px] rounded-full overflow-hidden bg-tint-alt flex">
+    return <Link href={""} className="w-[23.09px] h-[23.09px] rounded-full overflow-hidden bg-tint-alt flex">
         <div className="flex-1 bg-white rounded-full p-2 flex items-center justify-center">
             {children}
         </div>

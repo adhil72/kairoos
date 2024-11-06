@@ -74,6 +74,9 @@ const config: Config = {
 			},
 			fontFamily: {
 				wa: "Wix Madefor Display, sans-serif",
+			},
+			screens:{
+				'xs': '350px',
 			}
 		}
 	},

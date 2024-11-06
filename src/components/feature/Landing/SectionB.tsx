@@ -10,8 +10,8 @@ import Image from "next/image";
 
 function IconButton({ Icon, title, url }: { Icon: any, title: string, url: string }) {
     return <Link href={"#"} className="flex flex-col items-center justify-top group mx-2 lg:mx-5">
-        <div className="w-[81.8px] h-[81.8px] border-2 rounded-full overflow-hidden border-tint-alt bg-white group-hover:bg-tint-alt transition-all ease-in-out flex items-center justify-center">
-            <Icon className="fill-tint-alt group-hover:fill-white w-[27px] h-[27px] transition-all ease-in-out" />
+        <div className="w-[60px] h-[60px] xs:w-[81.8px] xs:h-[81.8px] border-2 rounded-full overflow-hidden border-tint-alt bg-white group-hover:bg-tint-alt transition-all ease-in-out flex items-center justify-center">
+            <Icon className="fill-tint-alt group-hover:fill-white w-[18px] h-[18px] xs:w-[27px] xs:h-[27px] transition-all ease-in-out" />
         </div>
         <span className="wa-ff mt-[14px] text-[13px] leading-[13px] font-[600] text-[#187593] text-center">
             {title}
@@ -37,8 +37,8 @@ export default function SectionB() {
             </div>
             <div className="flex">
                 <div className="flex-1 flex flex-col justify-center">
-                    <div className="flex w-full md:hidden lg:flex">
-                        <div className="flex flex-1 relative justify-center -mt-[25px]">
+                    <div className="xs:flex w-full md:hidden lg:flex hidden">
+                        <div className="xs:flex flex-1 relative justify-center -mt-[25px] hidden">
                             <Node />
                             <div className="w-1 h-full bg-tint-alt absolute"></div>
                         </div>
@@ -82,7 +82,7 @@ export default function SectionB() {
                 </div>
             </div>
         </Container>
-        <Container className="w-full  flex !flex-row !items-center -mt-28 justify-between md:justify-normal md:hidden lg:flex">
+        <Container className="w-full flex !flex-row !items-center -mt-28 justify-between md:justify-normal md:hidden lg:flex">
             <IconButton Icon={Whatsapp} title="Whatsapp" url="/aviation" />
             <VLine />
             <IconButton Icon={Phone} title="Enquire Now" url="/aviation" />

@@ -8,7 +8,7 @@ export default function A() {
         </div>
         <div className=''>
             {/* <HeroB  className="w-full"/> */}
-            <img src="/images/avitation/im_a.png" alt="" className="w-[214px] md:w-[259px] lg:w-[368px] h-[205px] md:h-[248.23px] lg:h-[352px]" />
+            <img src="/images/hero_b.png" alt="" className="w-[214px] md:w-[259px] lg:w-[368px] h-[205px] md:h-[248.23px] lg:h-[352px]" />
         </div>
     </Container>
 }

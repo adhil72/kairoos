@@ -80,12 +80,12 @@ const courses: Course[] = [
 
 const CoursesSection: React.FC = () => {
   return (
-    <section className="text-center py-16">
+    <section className="text-center">
       <Container>
-        <h2 className="text-[43px] font-bold text-[#187593] mb-6">
+        <h2 className="text-[29.1px] leading-[39.77px] md:text-[39.76px] md:leading-[55px] lg:text-[43px] lg:leading-[57px] font-bold text-[#187593] mb-6">
           Explore Our Aviation & Airport Management Courses
         </h2>
-        <p className="text-gray-600 mb-12 ">
+        <p className="text-gray-600 mb-12 font-wa font-[500] text-[15.52px] leading-[25.22px]">
           Uncover your potential with our best courses, created for your successful future. Our complete training program can help you succeed in any area you choose, whether it be aviation, logistics, or hospitality.
         </p>
 
