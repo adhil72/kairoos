@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function D() {
     return <>
-        <Container className="text-center py-8">
+        <Container className="text-center !py-0">
             <h2 className="text-[29px] md:text-[35px] md:leading-[45px] leading-[39px] font-bold text-[#187593] mb-16 max-w-6xl mx-auto">
                 Locations of Our Aviation
                 & Airport Management Colleges</h2>
@@ -19,7 +19,7 @@ export default function D() {
                             className="rounded-lg"
                         />
 
-                        <button className="absolute bottom-0 right-0 md:right-0 bg-[#187593] w-[145px] h-[35px] text-white rounded-full text-sm text-center font-semibold border-white border-4 hover:bg-tint-alt">
+                        <button className="absolute bottom-0 right-0 md:right-0 bg-[#187593] w-[145px] h-[40px] text-white rounded-full text-sm text-center font-semibold border-white border-4 hover:bg-tint-alt">
                             {location}
                         </button>
                     </div>

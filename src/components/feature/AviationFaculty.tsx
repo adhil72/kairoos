@@ -16,7 +16,7 @@ const AviationFaculty = () => {
     <section className="">
       <Container className="text-center !pt-0">
         <div className='relative'>
-          <h2 className="relative text-3xl md:text-4xl font-bold text-[#187593] mb-6">
+          <h2 className="relative text-[29.1px] leading-[39.77px] md:text-4xl font-bold text-[#187593] mb-6">
             <span className='text-[22px] font-[400]'>Team of Experienced</span>
             <img
               src='/images/sarrow.png'

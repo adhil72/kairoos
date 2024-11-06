@@ -39,11 +39,12 @@ export default function SectionH() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="w-full min-h-[60vh]">
+    <section className="w-full">
       <Container className="items-center">
         <span className="font-[400] text-[15.52px] lg:text-[22px] leading-[57px] text-[#187593] text-center">Testimonials</span>
-        <span className="font-[400] text-[29.1px] lg:text-[43px] leading-[57px] text-[#187593] text-center">About our Institution</span>
-        <div className="flex flex-col lg:flex-row mt-10 lg:mt-0 gap-y-10 lg:gap-y-0">
+        <span className="font-[400] capitalize text-[29.1px] lg:text-[43px] text-[#187593] text-center">About
+          <br /> our Institution</span>
+        <div className="flex justify-center flex-col lg:flex-row mt-10 lg:mt-0 gap-y-10 lg:gap-y-0">
           <div className="flex-1 flex justify-center lg:justify-end">
             <img
               className="w-[282.94px] object-right h-[266.82px] object-contain"
@@ -52,7 +53,7 @@ export default function SectionH() {
             />
           </div>
           <div className="flex-1 px-5">
-            <p className="font-wa h-[150px] overflow-y-auto font-[500] text-[14px] leading-[26px] text-center lg:text-start">{currentTestimonial.text}</p>
+            <p className="font-wa h-[150px] max-w-[500px] overflow-y-auto font-[500] text-[14px] leading-[26px] text-center lg:text-start">{currentTestimonial.text}</p>
             <div className="flex items-center lg:items-start flex-col mt-[17px] lg:mt-0">
               <span className="text-[#187593] font-[400] text-[17px] lg:leading-[57px]">{currentTestimonial.name}</span>
               <span className="font-wa font-[600] text-[16px] lg:leading-[26px]">{currentTestimonial.role}</span>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '../common/Container';
 
 const Testimonials = () => {
   const testimonials = [
@@ -12,10 +13,10 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="bg-white">
+      <Container className="">
         <h2 className="text-lg md:text-xl  text-[#187593] mb-6">Testimonials</h2>
-        <h1 className="text-[29px] md:text-[46px] md:text-4xl font-bold text-[#187593] mb-6">About our Institution</h1>
+        <h1 className="text-[29.1px] leading-[39.77px] md:text-[46px] md:text-4xl font-[400] text-[#187593] mb-6">About our Institution</h1>
         <div className="relative">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-6 mb-4 rounded-lg">
@@ -39,7 +40,7 @@ const Testimonials = () => {
             </div>
           ))}          
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

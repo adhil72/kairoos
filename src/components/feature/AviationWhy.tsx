@@ -70,7 +70,7 @@ const WhyAviationSection: React.FC = () => {
 
       <Container className="!px-0 md:!px-[80px] lg:!px-[150px]">
         <div className=" lg:mt-16 bg-[#F8F8F8] py-10 px-6 md:px-16 md:rounded-[40px] w-full">
-          <h3 className="text-[26px] font-[400] leading-[57px] text-center mb-8">Contact Form</h3>
+          <h3 className="text-[26px] font-[400] leading-[57px] text-center mb-8">Enquiry Form</h3>
           <form className="grid grid-cols-1 md:grid-cols-2 gap-6 font-wa">
             <input
               type="text"

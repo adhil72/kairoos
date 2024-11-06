@@ -43,9 +43,7 @@ export default function TopBadge() {
 }
 
 function IconCircle({ children, ...props }: React.HTMLProps<HTMLDivElement>) {
-    return <Link href={""} className="w-[20.54px] h-[20.54px] lg:w-6 lg:h-6 p-0.5 rounded-full overflow-hidden bg-tint-alt flex">
-        <div className="flex-1 bg-white p-[3px] rounded-full flex items-center justify-center">
-            {children}
-        </div>
+    return <Link href={""} className="w-[20.54px] h-[20.54px] bg-white lg:w-6 lg:h-6 p-0.5 rounded-full overflow-hidden flex justify-center items-center border-[2px] border-solid border-[#2FC5E1]">
+       {children}
     </Link>
 }
