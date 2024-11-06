@@ -45,8 +45,8 @@ const data = [
 function Box({ count, desc }: { count: string, desc: string }) {
     return (
         <div className="w-[284.82px] md:w-[327.5px] h-[177.5px] relative">
-            <B className="w-full h-full absolute" />
-            <div className="absolute w-[81.82px] h-[81.82px] mt-[20px] ml-[9.19px] md:mt-[15.02px] md:ml-[10.57px] flex justify-center items-center">
+            <B className="w-[99%] h-full absolute" />
+            <div className="absolute w-[81.82px] h-[81.82px] mt-[20px] ml-[9.19px] md:mt-[17.02px] md:ml-[15.57px] flex justify-center items-center">
                 <Circle className="w-[71.16px] h-[71.16px] md:w-[81.82px] md:h-[81.82px] absolute" />
                 <span className="absolute z-10 text-[27.71px] leading-[44.35px] text-[#1B4A5E]">
                     {count}
