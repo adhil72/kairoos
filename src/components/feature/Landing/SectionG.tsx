@@ -104,7 +104,7 @@ export default function SectionG() {
 
 function IconCircle({ children, ...props }: React.HTMLProps<HTMLDivElement>) {
     return <Link href={""} className="w-[28.09px] h-[28.09px] rounded-full overflow-hidden bg-tint-alt flex">
-        <div className="flex-1 bg-white rounded-full flex items-center justify-center">
+        <div className="flex-1 bg-white p-2 rounded-full flex items-center justify-center">
             {children}
         </div>
     </Link>
