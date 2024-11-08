@@ -76,11 +76,13 @@ export default function SectionB() {
                     </Container>
                 </div>
                 <div className="flex-1 justify-end  hidden lg:flex">
-                    <img
-                        src="/images/landing/im_e.png"
-                        className="w-[350px] object-contain"
-                        alt="img_e"
-                    />
+                    <div className="w-[438px] h-[677.11px] relative">
+                        <img src="/images/im_b.png" alt=""  className="w-[135.52px] h-[251.33px] mt-[149.26px] absolute"/>
+                        <img src="/images/im_a.png" alt="" className="w-[271.52px] object-cover h-[475.56px] absolute right-0" />
+                        <img src="/images/im_e.png" alt="" className="w-[24.88px] object-cover h-[24.88px] absolute ml-[135.87px] mt-[388.46px]" />
+                        <img src="/images/im_c.png" alt=""  className="w-[135.52px] h-[251.33px] mt-[425.78px] ml-[67.93px] absolute"/>
+                        <img src="/images/im_d.png" alt=""  className="w-[109.34px] h-[110.97px] mt-[521.46px] ml-[245.66px] absolute"/>
+                    </div>
                 </div>
             </div>
         </Container>

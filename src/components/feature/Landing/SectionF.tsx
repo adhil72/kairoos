@@ -108,7 +108,7 @@ export default function SectionF() {
                     <CarouselContent>
                         {
                             data.map((d, i) => (
-                                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3 xl:1/4">
+                                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
                                     <div className="flex justify-center">
                                         <Box key={i} count={d.count} desc={d.desc} />
                                     </div>
