@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SectionD() {
     return <section className="w-full min-h-[600px] overflow-x-hidden flex justify-center">
-        <Container className="min-h-[60vh] md:min-h-[600px]">
+        <Container className="md:min-h-[600px] py-32">
             <div className="w-full flex justify-between items-center lg:hidden -mr-10">
                 <div className="flex flex-col items-center gap-y-10 md:hidden">
                     <Image
